@@ -37,7 +37,7 @@ export default function AboutUs() {
           </div>
           <div className={styles.right}>
             <h3>Welcome to Sindhu&apos;s Kitchen</h3>
-            <p>At SINDHU&apos;S, we're all about bringing the rich and authentic flavors of South Indian Tamil cuisine to your table. Located at 2700 East Eldorado Parkway Suite 203, Little Elm, TX 75068, our food is made just like it is at home, with fresh and healthy ingredients. We use traditional cooking methods to keep all the natural goodness in every dish. <br />We prepare our food with the same care and attention as we would for our own family, valuing every ingredient that contributes to the excellence of our dishes.</p>
+            <p>At SINDHU&apos;S, we&apos;re all about bringing the rich and authentic flavors of South Indian Tamil cuisine to your table. Located at 2700 East Eldorado Parkway Suite 203, Little Elm, TX 75068, our food is made just like it is at home, with fresh and healthy ingredients. We use traditional cooking methods to keep all the natural goodness in every dish. <br />We prepare our food with the same care and attention as we would for our own family, valuing every ingredient that contributes to the excellence of our dishes.</p>
             <Link href="https://www.google.com" className={styles.btn}>Try Our Awesome Food</Link>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function AboutUs() {
         <div className={styles.box2}>
           <div className={styles.boxListTwo}>
             <h4>Fresh, Healthy, and Irresistible</h4>
-            <p>At Sindhu&apos;s, we make everything from scratch using the freshest ingredients, so you get all the natural goodness in every bite. Our menu is full of tasty and spicy snacks that you just can't resist. Whether you’re craving crispy bites or savory treats, we’ve got you covered. Come enjoy a taste of India and treat yourself to snacks that hit the spot!</p>
+            <p>At Sindhu&apos;s, we make everything from scratch using the freshest ingredients, so you get all the natural goodness in every bite. Our menu is full of tasty and spicy snacks that you just can&apos;t resist. Whether you&apos;re craving crispy bites or savory treats, we&apos;ve got you covered. Come enjoy a taste of India and treat yourself to snacks that hit the spot!</p>
           </div>
         </div>
       </section>
@@ -123,7 +123,7 @@ export default function AboutUs() {
             <div className={styles.extra}>”</div>
             <Image src="/asset/man.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
             <h4>Nikul S.</h4>
-            <p>I discovered this place yesterday on DD. I ordered the Rasaam and Sambar. Incredible. First time I had either of these items where it was comparable to home cooking. Not just the taste, but the freshness and quality of the preparation. I was so impressed I decided to put in a much larger order today and will enjoy with my family tonight for dinner. Although I have not tried today’s order, the quality and care of packaging was evident they take tremendous pride and care in their product. The food definitely surpasses any eye test! Will update the post after we eat tonight.</p>
+            <p>I discovered this place yesterday on DD. I ordered the Rasaam and Sambar. Incredible. First time I had either of these items where it was comparable to home cooking. Not just the taste, but the freshness and quality of the preparation. I was so impressed I decided to put in a much larger order today and will enjoy with my family tonight for dinner. Although I have not tried today&apos;s order, the quality and care of packaging was evident they take tremendous pride and care in their product. The food definitely surpasses any eye test! Will update the post after we eat tonight.</p>
           </div>
         </div>
       </section>
