@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <>
         <Head>
-            <title>Sindhu's Kitchen</title>
+            <title>Sindhu&apos;s Kitchen</title>
         </Head>
         
         <Navbar />
