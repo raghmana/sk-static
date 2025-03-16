@@ -119,8 +119,8 @@ export default function Catering() {
   return (
     <>
       <Head>
-        <title>Catering Services - Sindhu's Kitchen</title>
-        <meta name="description" content="Request catering services from Sindhu's Kitchen for your special events." />
+        <title>Catering Services - Sindhu&apos;s Kitchen</title>
+        <meta name="description" content="Request catering services from Sindhu&apos;s Kitchen for your special events." />
       </Head>
       
       <div className={styles.cateringContainer}>
@@ -133,7 +133,7 @@ export default function Catering() {
           <div className={styles.cateringInfo}>
             <h2>Our Catering Services</h2>
             <p>
-              At Sindhu's Kitchen, we offer premium catering services for all types of events, 
+              At Sindhu&apos;s Kitchen, we offer premium catering services for all types of events, 
               from intimate gatherings to large celebrations. Our team will work with you to 
               create a customized menu that suits your taste and budget.
             </p>
@@ -162,7 +162,7 @@ export default function Catering() {
             )}
             <form onSubmit={handleSubmit}>
                 <div className={styles.formGroup}>
-                    <h5>Select Items You're Interested In</h5>
+                    <h5>Select Items You&apos;re Interested In</h5>
                     <p>Breakfast</p>
                     <div className={styles.formItems}>
                         {menuItems.map(item => (
