@@ -1,0 +1,191 @@
+@use 'variables' as *;
+
+.cateringContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.cateringHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 3rem;
+    font-family: "Playfair", serif;
+    color: $black-font;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $black-font;
+  }
+}
+
+.cateringContent {
+  display: flex;
+  gap: 3rem;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.cateringInfo {
+  flex: 1;
+  
+  h2 {
+    font-size: 2rem;
+    font-family: "Playfair", serif;
+    color: $black-font;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+}
+
+.cateringFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature {
+  background-color: $sage-green;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(9, 30, 66, 0.08);
+  
+  h3 {
+    font-size: 1.3rem;
+    font-family: "Playfair", serif;
+    color: $black-font;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+}
+
+.cateringForm {
+  flex: 1;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(9, 30, 66, 0.08);
+  
+  h2 {
+    font-size: 1.8rem;
+    font-family: "Playfair", serif;
+    color: $black-font;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  .formItems {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menuItem {
+    display: inline-block;
+    flex: 50%;
+  }
+  label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  input, select, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+  
+  .formGroup {
+    flex: 1;
+  }
+  
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+}
+
+.submitButton {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  
+  &:hover {
+    background-color: $secondary-color;
+  }
+  
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}
+
+.statusMessage {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  
+  &.success {
+    background-color: rgba($secondary-color, 0.2);
+    color: darken($secondary-color, 20%);
+    border: 1px solid rgba($secondary-color, 0.3);
+  }
+  
+  &.error {
+    background-color: rgba(#f44336, 0.2);
+    color: darken(#f44336, 10%);
+    border: 1px solid rgba(#f44336, 0.3);
+  }
+}
