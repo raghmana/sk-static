@@ -23,11 +23,22 @@ export default function Hero() {
                         rootMargin="-50px"
                         onLetterAnimationComplete={handleAnimationComplete}
                     />
+                    <p>39 years of serving our classics. From traditional delicacies to highest quality South Indian specials, we at Sindhu's always believed in serving quality food at affordable prices.</p>
                     <br />
                     <Link href="https://www.google.com" className={styles.btn}>Order Now</Link>
+                    <Image src="/asset/hero/banner-1.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
                 </div>
                 <div className={styles.right}>
-                    <Image src="/asset/sh.png" alt="Sindhu's Kitchen" className={styles.heroImg} width={400} height={70} priority />
+                    <div className={styles.one}>
+                        <div className={styles.shape1}></div>
+                    </div>
+                    <div className={styles.two}>
+                        <div className={styles.shape1}>
+                            <Image src="/asset/hero/banner-2.png" alt="Sindhu's Kitchen" className={styles.bannerShapes2} width={400} height={170} priority />
+                        </div>
+                    </div>
+                    {/* <div className={styles.three}></div> */}
+                    {/* <Image src="/asset/galary/hero.png" alt="Sindhu's Kitchen" className={styles.heroImg} width={400} height={170} priority /> */}
                 </div>
             </div>
         </div>

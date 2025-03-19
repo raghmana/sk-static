@@ -10,25 +10,38 @@
 .hero {
     
     .heroContainer {
-        max-width: 1200px;
-        background-color: $sage-green;
+        -max-width: 1200px;
+        
         margin: 0 auto;
-        margin-top: 11rem;
-        padding: 1rem 2rem;
+        -margin-top: 11rem;
+        -padding: 1rem 2rem;
         box-sizing: border-box;
-        border-radius: 3rem;
+        -border-radius: 3rem;
         display: flex;
+        height: 100vh;
         .left {
-            width: 65%;
-            padding: 1rem;
-            h1 {
-                display: block;
+            width: 50%;
+            padding-left: 5rem;
+            margin-top: 11rem;
+            box-sizing: border-box;
+            .heroTitle {
+                font-size: 4rem;
+                margin: 0;
+                font-family: "Playfair", serif;
+                font-weight: 800;
+                line-height: 1.25;
+                letter-spacing: -0.025em;
+                color: $black-font;
+            }
+            p {
+              font-size: 1rem;
+              font-family: "Poppins", sans-serif;
             }
             .btn {
                 background-color: $primary-color;
                 color: #fff;
-                padding: 0.5rem 1.9rem;
-                font-size: 1.5rem;
+                padding: 0.9rem 2.5rem;
+                font-size: 1.3rem;
                 font-weight: 500;
                 border-radius: 1.9rem;
                 border: none;
@@ -36,41 +49,149 @@
                 transition: 0.3s;
                 display: inline-block;
                 font-family: "Poppins", sans-serif;
-                margin-top: 1.4rem;
+                margin-top: rem;
                 &:hover {
                     text-decoration: none;
                     background-color: $secondary-color;
                 }
             }
-        }
-        .right {
-            width: 35%;
-            .heroImg {
-                width: 100%;
-                height: auto;
-                border-radius: 2rem;
-                margin-top: 2.1rem;
-                margin-left: -3.5rem;
-                transform: scale(1.45);
+            .bannerShapes1 {
+                position: absolute;
+                width: 20%;
+                height:auto;
+                left: -4rem;
+                margin-top: 4rem;
+                opacity: 0.5;
             }
         }
-    }
-    .heroTitle {
-        font-size: 4.8rem;
-        margin: 0;
-        font-family: "Playfair", serif;
-        font-weight: 800;
-        line-height: 1.25;
-        letter-spacing: -0.025em;
-        color: $black-font;
-    }
-    p {
-      font-size: 1.5rem;
+        .right {
+            width: 50%;
+            background-color: $secondary-color-light;
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            .heroImg {
+                width: 90%;
+                height: auto;
+                border-radius: 2rem;
+                margin-top: 5.3rem;
+                -margin-left: -2.1rem;
+                transform: scale(1);
+            }
+            .one {
+                width: 15rem;
+                height: 23rem;
+                background-color: #fff;
+                border-radius: 10rem;
+                margin-top: 50%;
+                background-image: url('../../public/asset/hero/1.png');
+                background-size: cover;
+                background-position: 50% 30%;
+                position: relative;
+                -border: 4px solid #fff;
+                &::before {
+                    content: "";
+                    width: 15rem;
+                    height: 15rem;
+                    background-color: #fff;
+                    border-radius: 0rem 10rem 10rem 10rem;
+                    position: absolute;
+                    top: -16.5rem;
+                    left: -0.5rem;
+                    z-index: 1;
+                    background-image: url('../../public/asset/hero/2.png');
+                    background-size: 143%;
+                    background-position: 50% 50%;
+                    -border: 4px solid #fff;
+                }
+                &::after {
+                    content:"";
+                    position: absolute;
+                    width: 15rem;
+                    height: 23rem;
+                    border: 1px solid $black-font;
+                    border-radius: 10rem;
+                    margin-left: 0.5rem;
+                    margin-top: -0.5rem;
+                }
+                .shape1 {
+                    width: 10rem;
+                    height: 10rem;
+                    background: url('../../public/asset/hero/star.png') no-repeat;
+                    position: absolute;
+                    left: -5rem;
+                    z-index: 1;
+                }
+            }
+            .two {
+                width: 15rem;
+                height: 23rem;
+                background-color: #fff;
+                border-radius: 10rem;
+                margin-top: 18%;
+                background-image: url('../../public/asset/hero/4.png');
+                background-size: cover;
+                background-position: 50% 30%;
+                -border: 4px solid #fff;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 15rem;
+                    height: 15rem;
+                    background-color: #fff;
+                    border-radius: 10rem 10rem 0rem 10rem;
+                    position: absolute;
+                    top: 24rem;
+                    left: 0;
+                    z-index: 1;
+                    background-image: url('../../public/asset/hero/3.png');
+                    background-size: 120%;
+                    background-position: 50% 50%;
+                    -border: 4px solid #fff;
+                }
+                &::before {
+                    content:"";
+                    position: absolute;
+                    width: 15rem;
+                    height: 23rem;
+                    border: 1px solid $black-font;
+                    border-radius: 10rem;
+                    margin-left: 0.5rem;
+                    margin-top: -0.5rem;
+                }
+                .shape1 {
+                    width: 10rem;
+                    height: 10rem;
+                    background: url('../../public/asset/hero/star.png') no-repeat;
+                    position: absolute;
+                    left: -3rem;
+                    top: -4rem;
+                    z-index: 1;
+                }
+                .bannerShapes2 {
+                    position: absolute;
+                    width: 80%;
+                    height:auto;
+                    left: 16rem;
+                    margin-top: 4rem;
+                    opacity: 0.7;
+                    z-index: -1;
+                }
+            }
+            .three {
+                width: 15rem;
+                height: 30rem;
+                background-color: #fff;
+                border-radius: 10rem;
+                margin-top: 33%;
+                
+            }
+        }
     }
 }
 
 .navbar {
-    background-color: #fff;
+    background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
@@ -81,6 +202,7 @@
 
     &.shadow {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Add shadow on scroll
+        background-color: #fff;
     }
     
     .inner {
@@ -360,7 +482,7 @@
         display: grid;
         grid-template-columns: repeat(11, 1fr);
         grid-auto-rows: minmax(130px, auto);
-        gap: 0.2rem;
+        gap: 0rem;
         margin: 0 auto;
         width: 1200px;
         -background-color: #fff;
@@ -368,14 +490,14 @@
         border-radius: 0.2rem;
         &:hover {
             div {
-                filter: blur(5);
+                filter: grayscale(100%);
             }
         }
         div {
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 1.5rem;
+            border-radius: 0rem;
             background: linear-gradient(145deg, #1e1f21, #2d2e30);
             opacity: 1;
             transition: all 0.3s ease-in-out;
@@ -701,10 +823,52 @@
 
 
 .footer {
-    background-color: #333;
+    background-color: #01190e;
     padding: 2rem;
-    text-align: center;
-    p {
+    .footerInner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        .brand {
+            width: 30%;
+            p {
+                font-size: 0.8rem;
+                font-family: "Poppins", sans-serif;
+                color: #fff;
+                label {
+                    font-weight: 500;
+                    margin-right: 1rem;
+                }
+            }
+            h4 {
+                color: #fff;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+        .navLinks {
+            margin-top: 5.7rem;
+            margin-left: 2rem;
+            h4 {
+                color: #fff;
+                font-family: "Poppins", sans-serif;
+            }
+            a {
+                display: block;
+                color: #fff;
+                font-size: 0.8rem;
+                font-family: "Poppins", sans-serif;
+                margin-bottom: 1.3rem;
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .copy {
         color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 1rem
     }
 }

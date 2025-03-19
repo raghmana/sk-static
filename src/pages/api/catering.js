@@ -159,6 +159,8 @@ export default async function handler(req, res) {
       // In development, log the emails instead of sending them
       console.log('Admin Email:', mailOptions);
       console.log('Customer Email:', customerMailOptions);
+      await transporter.sendMail(mailOptions);
+      await transporter.sendMail(customerMailOptions);
       
       return res.status(200).json({ 
         message: 'Catering request received successfully (DEV MODE - emails logged to console)',

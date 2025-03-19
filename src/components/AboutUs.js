@@ -12,12 +12,12 @@ export default function AboutUs() {
       <section className={styles.how}>
         <h2>Today&apos;s Special</h2>
         <Marquee className={styles.marquee} pauseOnHover={true} gradient={false} speed={60}>
-          <Image src="/asset/banner/2.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
           <Image src="/asset/banner/1.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
           <Image src="/asset/banner/2.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
-          <Image src="/asset/banner/1.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
-          <Image src="/asset/banner/2.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
-          <Image src="/asset/banner/1.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/3.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/4.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/5.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/6.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
         </Marquee>
         <Marquee className={styles.marquee} pauseOnHover={true} gradient={false} speed={60} direction={"right"}>
           <h3>Chicken Biryani - </h3>
