@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.footerInner}>
         <div className={styles.brand}>
           <Image src="/asset/logo-round.png" alt="Sindhu's Kitchen" width={100} height={100} priority />
-          <p>Whether you're craving crispy bites or savory treats, we've got you covered. Come enjoy a taste of India and treat yourself to snacks that hit the spot!</p>
+          <p>Whether you&apos;re craving crispy bites or savory treats, we&apos;ve got you covered. Come enjoy a taste of India and treat yourself to snacks that hit the spot!</p>
           <h4>Opening Hours</h4>
           <p><label>Sunday - Saturday: </label><label>11:00 AM to 9:00 PM</label></p>
           <p><label>Tuesday: </label><label>CLOSED</label></p>

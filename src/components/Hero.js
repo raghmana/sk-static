@@ -23,7 +23,7 @@ export default function Hero() {
                         rootMargin="-50px"
                         onLetterAnimationComplete={handleAnimationComplete}
                     />
-                    <p>39 years of serving our classics. From traditional delicacies to highest quality South Indian specials, we at Sindhu's always believed in serving quality food at affordable prices.</p>
+                    <p>39 years of serving our classics. From traditional delicacies to highest quality South Indian specials, we at Sindhu&apos;s always believed in serving quality food at affordable prices.</p>
                     <br />
                     <Link href="https://www.google.com" className={styles.btn}>Order Now</Link>
                     <Image src="/asset/hero/banner-1.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
