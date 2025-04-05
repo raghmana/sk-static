@@ -3,7 +3,7 @@ import styles from '../styles/home.module.scss';
 import Head from 'next/head';
 import Link from 'next/link';
 
-export default function menu() {
+export default function Menu() {
     const [menuItems, setMenuItems] = useState([]);
 
     useEffect(() => {
