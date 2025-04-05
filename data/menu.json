@@ -1,0 +1,1108 @@
+[
+  {
+    "id": "1743535168908",
+    "name": "Idly with White Kurma (Single)",
+    "description": "Idly with White Kurma (Single)",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743535593568",
+    "name": "Idly (Each)",
+    "description": "Idly (Each)\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536086327",
+    "name": "Coconut Chutney",
+    "description": "Coconut Chutney\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536098865",
+    "name": "Ghee Pepper Pongal",
+    "description": "Ghee Pepper Pongal\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536161407",
+    "name": "Tomato Chutney",
+    "description": "Tomato Chutney\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536178960",
+    "name": "Idiyaappam with Veg Kurma",
+    "description": "Idiyaappam with Veg Kurma\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536197074",
+    "name": "Sweet Ghee Pongal",
+    "description": "Sweet Ghee Pongal\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536214715",
+    "name": "Pudhina Chutney",
+    "description": "Pudhina Chutney\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536236545",
+    "name": "Peanut Chutney",
+    "description": "Peanut Chutney\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536248211",
+    "name": "Tiffin Sambar (3 vegetables)",
+    "description": "Tiffin Sambar (3 vegetables)\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536261669",
+    "name": "Madras Filter Coffee",
+    "description": "Madras Filter Coffee\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536307881",
+    "name": "Idiyaappam (Each)",
+    "description": "Idiyaappam (Each)\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536321257",
+    "name": "Vegetable Kichadi",
+    "description": "Vegetable Kichadi\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536333239",
+    "name": "Poori (Each)",
+    "description": "Poori (Each)\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536344655",
+    "name": "Onion Utthappam",
+    "description": "Onion Utthappam\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536355815",
+    "name": "Tea",
+    "description": "Tea",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536367687",
+    "name": "Ragi Roti",
+    "description": "Ragi Roti\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536386081",
+    "name": "Plain Uppuma",
+    "description": "Plain Uppuma\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536399290",
+    "name": "Vegetable Uppuma",
+    "description": "Vegetable Uppuma\n",
+    "price": "1",
+    "category": "Breakfast"
+  },
+  {
+    "id": "1743536444980",
+    "name": "Chili Chicken (Boneless)",
+    "description": "Chili Chicken (Boneless)\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743536458206",
+    "name": "Onion Pakoda",
+    "description": "Onion Pakoda\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743536469175",
+    "name": "Fish Fry",
+    "description": "Fish Fry\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743536481777",
+    "name": "Chicken Manchurian",
+    "description": "Chicken Manchurian\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539065631",
+    "name": "Chicken 65",
+    "description": "Chicken 65\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539077185",
+    "name": "Onion Bajji",
+    "description": "Onion Bajji\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539097273",
+    "name": "Gobi (Cauliflower) Manchurian",
+    "description": "Gobi (Cauliflower) Manchurian\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539113105",
+    "name": "Mysore Bonda",
+    "description": "Mysore Bonda\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539127631",
+    "name": "Potato Bonda",
+    "description": "Potato Bonda\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539139394",
+    "name": "Rasam Vada",
+    "description": "Rasam Vada\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539153467",
+    "name": "Vegetable Spring Roll (Single)",
+    "description": "Vegetable Spring Roll (Single)\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539163692",
+    "name": "Kuzhi Paniyaram",
+    "description": "Kuzhi Paniyaram\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539930672",
+    "name": "Gobi (Cauliflower) 65",
+    "description": "Gobi (Cauliflower) 65\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743539941485",
+    "name": "Sambar Vada",
+    "description": "Sambar Vada\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540130658",
+    "name": "Baby Corn Manchurian",
+    "description": "Baby Corn Manchurian\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540141695",
+    "name": "Masala Vada",
+    "description": "Masala Vada\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540152648",
+    "name": "Mini Sambar Idly",
+    "description": "Mini Sambar Idly\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540167122",
+    "name": "Chicken Palliapalayam(Boneless)",
+    "description": "Chicken Palliapalayam(Boneless)\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540188664",
+    "name": "Vegetable Pakoda",
+    "description": "Vegetable Pakoda\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540199467",
+    "name": "Curd/Thayir Vada",
+    "description": "Curd/Thayir Vada\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540210738",
+    "name": "Medhu Vada",
+    "description": "Medhu Vada\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540224962",
+    "name": "Beetroot Vada",
+    "description": "Beetroot Vada\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540243256",
+    "name": "Spinach Vada",
+    "description": "Spinach Vada\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540254957",
+    "name": "Bajji(Plantain/Onion/Potato)",
+    "description": "Bajji(Plantain/Onion/Potato)\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540267938",
+    "name": "Egg Bonda",
+    "description": "Egg Bonda\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540279009",
+    "name": "Banana Flower Vada",
+    "description": "Banana Flower Vada\n",
+    "price": "1",
+    "category": "Appetizers"
+  },
+  {
+    "id": "1743540298506",
+    "name": "Egg Curry",
+    "description": "Egg Curry\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540311446",
+    "name": "Potato Peas Masala",
+    "description": "Potato Peas Masala\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540326564",
+    "name": "Vegetable Kuzhambu",
+    "description": "Vegetable Kuzhambu\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540399591",
+    "name": "Kathrikai Gravy",
+    "description": "Kathrikai Gravy\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540411258",
+    "name": "Chicken Kozhamboo (Chettinaad Style Curry)",
+    "description": "Chicken Kozhamboo (Chettinaad Style Curry)\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540422004",
+    "name": "Chicken Semi Gravy",
+    "description": "Chicken Semi Gravy\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540436118",
+    "name": "Okra/Tindora Fry",
+    "description": "Okra/Tindora Fry\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540449554",
+    "name": "Rasam",
+    "description": "Rasam",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540460981",
+    "name": "Potato Peas Pall Curry",
+    "description": "Potato Peas Pall Curry\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540478093",
+    "name": "Paneer Butter Masala",
+    "description": "Paneer Butter Masala\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540489120",
+    "name": "Vegetable Kootu",
+    "description": "Vegetable Kootu\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743540514740",
+    "name": "Vegetable Sambar",
+    "description": "Vegetable Sambar\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542594616",
+    "name": "Chicken Kozhamboo (Sindhu's Special Curry)",
+    "description": "Chicken Kozhamboo (Sindhu's Special Curry)\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542604899",
+    "name": "Egg Masala",
+    "description": "Egg Masala\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542616755",
+    "name": "Yennai Kathrikai",
+    "description": "Yennai Kathrikai\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542664137",
+    "name": "Poondy/Vatha Kuzhambo",
+    "description": "Poondy/Vatha Kuzhambo\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542676003",
+    "name": "Vegetable Fry",
+    "description": "Vegetable Fry\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542702985",
+    "name": "Vada Curry",
+    "description": "Vada Curry\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542715186",
+    "name": "Kadalai Curry",
+    "description": "Kadalai Curry\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542727891",
+    "name": "Bitter Guard Curry",
+    "description": "Bitter Guard Curry\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542738843",
+    "name": "Green Gram Gravy",
+    "description": "Green Gram Gravy\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542749736",
+    "name": "Kalyana Vaazhakai Varuval (Plantain Fry)",
+    "description": "Kalyana Vaazhakai Varuval (Plantain Fry)\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542766677",
+    "name": "Poondu Vatha Kuzhamboo",
+    "description": "Poondu Vatha Kuzhamboo\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542777289",
+    "name": "Dal Tadka Fry",
+    "description": "Dal Tadka Fry\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542788250",
+    "name": "Vegetable Kurma",
+    "description": "Vegetable Kurma\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542800139",
+    "name": "Fish Curry(Pomfret)",
+    "description": "Fish Curry(Pomfret)\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542811429",
+    "name": "Vegetable Poriyal",
+    "description": "Vegetable Poriyal\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542824806",
+    "name": "Poondu Vatha Kuzhambu",
+    "description": "Poondu Vatha Kuzhambu\n",
+    "price": "1",
+    "category": "Curries"
+  },
+  {
+    "id": "1743542865943",
+    "name": "Jeera Pulav (with Raitha)",
+    "description": "Jeera Pulav (with Raitha)\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743542876817",
+    "name": "Tomato Rice",
+    "description": "Tomato Rice\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743542889007",
+    "name": "Kalyaana Vaazhakai Varuval (Plantain Fry)",
+    "description": "Kalyaana Vaazhakai Varuval (Plantain Fry)\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743542901690",
+    "name": "Peas Pulav",
+    "description": "Peas Pulav\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743542912206",
+    "name": "Paneer Biriyani",
+    "description": "Paneer Biriyani\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743542931434",
+    "name": "Mushroom Biriyani",
+    "description": "Mushroom Biriyani\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743543297527",
+    "name": "Potato Peas Masala",
+    "description": "Potato Peas Masala\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879835089",
+    "name": "Vegetable Fried Rice",
+    "description": "Vegetable Fried Rice\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879845928",
+    "name": "Lemon Rice",
+    "description": "Lemon Rice\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879856444",
+    "name": "Chilli Parotta",
+    "description": "Chilli Parotta\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879869481",
+    "name": "Coconut Rice",
+    "description": "Coconut Rice\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879881822",
+    "name": "Bisbele Bath",
+    "description": "Bisbele Bath\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879899492",
+    "name": "Vegetable Variety Rice",
+    "description": "Vegetable Variety Rice\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879910097",
+    "name": "Vegetable Kuzhambu",
+    "description": "Vegetable Kuzhambu\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879920978",
+    "name": "Kathrikai Gravy",
+    "description": "Kathrikai Gravy\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879935287",
+    "name": "Okra/Tindora Fry",
+    "description": "Okra/Tindora Fry\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879957829",
+    "name": "Rasam",
+    "description": "Rasam",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879969451",
+    "name": "Tamarind Rice",
+    "description": "Tamarind Rice\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879980334",
+    "name": "Potato Peas Paal Curry",
+    "description": "Potato Peas Paal Curry\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743879992370",
+    "name": "Paneer Butter Masala",
+    "description": "Paneer Butter Masala\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880148815",
+    "name": "Vegetable Kootu",
+    "description": "Vegetable Kootu\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880159245",
+    "name": "Vegetable Sambar",
+    "description": "Vegetable Sambar\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880171824",
+    "name": "Yennai Kathrikai",
+    "description": "Yennai Kathrikai\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880183104",
+    "name": "Poondu/Vatha Kuzhambo",
+    "description": "Poondu/Vatha Kuzhambo\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880194291",
+    "name": "Vegetable Noodles",
+    "description": "Vegetable Noodles\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880205988",
+    "name": "Vegetable Fry",
+    "description": "Vegetable Fry\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880216203",
+    "name": "Vegetable Kurma",
+    "description": "Vegetable Kurma\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880226413",
+    "name": "Vegetable Thuvaiyal",
+    "description": "Vegetable Thuvaiyal\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880236459",
+    "name": "Aviyal",
+    "description": "Aviyal",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880246768",
+    "name": "Sambar Rice",
+    "description": "Sambar Rice\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880276747",
+    "name": "Potato Fry",
+    "description": "Potato Fry\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880288526",
+    "name": "White Rice (Well Cooked Ponni Parboiled Rice or Sona Masoori)",
+    "description": "White Rice (Well Cooked Ponni Parboiled Rice or Sona Masoori)\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880300450",
+    "name": "Special Curd Rice",
+    "description": "Special Curd Rice\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880312126",
+    "name": "Poriyal(Choice of Veggie)",
+    "description": "Poriyal(Choice of Veggie)\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880323521",
+    "name": "Dal Tadka Fry",
+    "description": "Dal Tadka Fry\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880334421",
+    "name": "Vegetable Pulav",
+    "description": "Vegetable Pulav\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880345961",
+    "name": "Paneer Pulav with Raitha",
+    "description": "Paneer Pulav with Raitha\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880356564",
+    "name": "Special Vegetable Biriyani with Raitha",
+    "description": "Special Vegetable Biriyani with Raitha\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880368041",
+    "name": "Varuval(Choice of Veggie)",
+    "description": "Varuval(Choice of Veggie)\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880379314",
+    "name": "Vegetable Kothu Parotta",
+    "description": "Vegetable Kothu Parotta\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880390094",
+    "name": "Madurai Parotta",
+    "description": "Madurai Parotta\n",
+    "price": "1",
+    "category": "Vegetarian"
+  },
+  {
+    "id": "1743880406672",
+    "name": "Egg Curry",
+    "description": "Egg Curry\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880416683",
+    "name": "Sindhu's Special Mutton Kuzhambu",
+    "description": "Sindhu's Special Mutton Kuzhambu\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880428012",
+    "name": "Fish Fry",
+    "description": "Fish Fry\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880438441",
+    "name": "Chicken Kozhambo (Chettinaad Style Curry)",
+    "description": "Chicken Kozhambo (Chettinaad Style Curry)\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880448650",
+    "name": "Chicken Semi Gravy",
+    "description": "Chicken Semi Gravy\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880458514",
+    "name": "Chicken Kozhambo (Sindhu's Special Curry)",
+    "description": "Chicken Kozhambo (Sindhu's Special Curry)\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880468197",
+    "name": "Egg Masala",
+    "description": "Egg Masala\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880479229",
+    "name": "Chicken Manchurian",
+    "description": "Chicken Manchurian\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880545248",
+    "name": "Sindhu's Chickn Biriyani (Basmathi Rice)",
+    "description": "Sindhu's Chickn Biriyani (Basmathi Rice)\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880554576",
+    "name": "Chicken 65 (Boneless)",
+    "description": "Chicken 65 (Boneless)\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880564871",
+    "name": "Fish Curry",
+    "description": "Fish Curry\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880576297",
+    "name": "Chicken Kothu Parotta",
+    "description": "Chicken Kothu Parotta\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880586118",
+    "name": "Pepper Chicken",
+    "description": "Pepper Chicken\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880597952",
+    "name": "Curry Leaf Chicken",
+    "description": "Curry Leaf Chicken\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880609571",
+    "name": "Chicken Pulav",
+    "description": "Chicken Pulav\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880619063",
+    "name": "Egg Fried Rice",
+    "description": "Egg Fried Rice\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880630460",
+    "name": "Chicken Fried Rice",
+    "description": "Chicken Fried Rice\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880641426",
+    "name": "Chicken Kadai Rice",
+    "description": "Chicken Kadai Rice\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880652391",
+    "name": "Chilli Chicken(Boneless)",
+    "description": "Chilli Chicken(Boneless)\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880661680",
+    "name": "Chicken Pallipalayam(Boneless)",
+    "description": "Chicken Pallipalayam(Boneless)\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880671829",
+    "name": "Special Mutton Biriyani",
+    "description": "Special Mutton Biriyani\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880681156",
+    "name": "Chicken Tikka Masala",
+    "description": "Chicken Tikka Masala\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880692726",
+    "name": "Chicken Butter Masala",
+    "description": "Chicken Butter Masala\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880702990",
+    "name": "Mutton Kothu Parotta",
+    "description": "Mutton Kothu Parotta\n",
+    "price": "1",
+    "category": "Non-Vegetarian"
+  },
+  {
+    "id": "1743880730523",
+    "name": "Jeera Pulav (with Raitha)",
+    "description": "Jeera Pulav (with Raitha)\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880740703",
+    "name": "Tomato Rice",
+    "description": "Tomato Rice\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880751111",
+    "name": "Peas Pulav (with Raitha)",
+    "description": "Peas Pulav (with Raitha)\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880761500",
+    "name": "Paneer Biriyani",
+    "description": "Paneer Biriyani\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880772531",
+    "name": "Mushroom Biriyani",
+    "description": "Mushroom Biriyani\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880782577",
+    "name": "Vegetable Fried Rice",
+    "description": "Vegetable Fried Rice\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880792866",
+    "name": "Lemon Rice",
+    "description": "Lemon Rice\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880803576",
+    "name": "Curd Rice",
+    "description": "Curd Rice\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880813995",
+    "name": "White Rice (Well Cooked Ponni Parboiled Rice or Sona Masoori)",
+    "description": "White Rice (Well Cooked Ponni Parboiled Rice or Sona Masoori)\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880824376",
+    "name": "Coconut Rice",
+    "description": "Coconut Rice\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880835757",
+    "name": "Bisibele Bath",
+    "description": "Bisibele Bath\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880846466",
+    "name": "Tamarind Rice",
+    "description": "Tamarind Rice\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880856906",
+    "name": "Paneer Pulav (with Raitha)",
+    "description": "Paneer Pulav (with Raitha)\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880868021",
+    "name": "Chicken Pulav",
+    "description": "Chicken Pulav\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880878428",
+    "name": "Sambar Rice",
+    "description": "Sambar Rice\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880890793",
+    "name": "Vegetable Biriyani (with Raitha)",
+    "description": "Vegetable Biriyani (with Raitha)\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880900661",
+    "name": "Vegetable Pulav (with Raitha)",
+    "description": "Vegetable Pulav (with Raitha)\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880912773",
+    "name": "Special Mutton Biriyani (with Raitha)",
+    "description": "Special Mutton Biriyani (with Raitha)\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880924141",
+    "name": "Chicken Biriyani (with Raitha)",
+    "description": "Chicken Biriyani (with Raitha)\n",
+    "price": "1",
+    "category": "Rice"
+  },
+  {
+    "id": "1743880934030",
+    "name": "Chicken Biriyani (with Raitha)",
+    "description": "Chicken Biriyani (with Raitha)\n\n",
+    "price": "1",
+    "category": "Rice"
+  }
+]

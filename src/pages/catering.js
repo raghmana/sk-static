@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../styles/Catering.module.scss';
 import Head from 'next/head';
+import { getMenuItems } from '../lib/menuService';
+import Accordion from '../components/AccordionCat';
 
 export default function Catering() {
+  const [menuItems, setMenuItems] = useState([]);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,8 +19,23 @@ export default function Catering() {
     additionalInfo: '',
     selectedItems: [],
   });
+  useEffect(() => {
+    loadData();
+  }, []);
 
 //   const [selectedItems, setSelectedItems] = useState([]);
+
+  const loadData = async () => {
+    try {
+      
+      const [menuData] = await Promise.all([
+        getMenuItems()
+      ]);
+      setMenuItems(menuData);
+    } catch (error) {
+      console.error('Failed to load data:', error);
+    }
+  };
 
   const handleCheckboxChange = (itemId) => {
     setFormData(prev => {
@@ -28,28 +46,12 @@ export default function Catering() {
     });
   };
 
-  const menuItems = [
-    {
-      id: 1,
-      name: 'Idly with White Kurma (Single)'
-    },
-    {
-      id: 2,
-      name: 'Idly (Each)'
-    },
-    {
-      id: 3,
-      name: 'Ghee Pepper Pongal'
-    },
-    {
-      id: 4,
-      name: 'Idiyaappam with Veg Kurma'
-    },
-    {
-      id: 5,
-      name: 'Sweet Ghee Pongal'
-    }
-  ];
+  const breakfastItems = menuItems.filter(item => item.category === 'Breakfast');
+  const AppetizersItems = menuItems.filter(item => item.category === 'Appetizers');
+  const CurriesItems = menuItems.filter(item => item.category === 'Curries');
+  const VegetarianItems = menuItems.filter(item => item.category === 'Vegetarian');
+  const NonVegetarianItems = menuItems.filter(item => item.category === 'Non-Vegetarian');
+  const RiceItems = menuItems.filter(item => item.category === 'Rice');
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({
@@ -163,9 +165,10 @@ export default function Catering() {
             <form onSubmit={handleSubmit}>
                 <div className={styles.formGroup}>
                     <h5>Select Items You&apos;re Interested In</h5>
-                    <p>Breakfast</p>
-                    <div className={styles.formItems}>
-                        {menuItems.map(item => (
+                    {/* <p>Breakfast</p> */}
+                    <Accordion title={"Breakfast"} content={
+                      <div className={styles.formItems}>
+                        {breakfastItems.map(item => (
                             <label key={item.id} className={styles.menuItem}>
                                     <input
                                     type="checkbox"
@@ -177,7 +180,89 @@ export default function Catering() {
                                     <span>{item.name}</span>
                             </label>
                         ))}
-                    </div> 
+                      </div>
+                    } key={"Breakfast"} />
+                     
+                    <Accordion title={"Appetizers"} content={
+                      <div className={styles.formItems}>
+                          {AppetizersItems.map(item => (
+                              <label key={item.id} className={styles.menuItem}>
+                                      <input
+                                      type="checkbox"
+                                      name="Appetizers"
+                                      checked={formData.selectedItems.includes(item.name)}
+                                      onChange={() => handleCheckboxChange(item.name)}
+                                      value={item.name}
+                                      />
+                                      <span>{item.name}</span>
+                              </label>
+                          ))}
+                      </div>
+                    } key={"Appetizers"} />
+                    <Accordion title={"Curries"} content={
+                      <div className={styles.formItems}>
+                          {CurriesItems.map(item => (
+                              <label key={item.id} className={styles.menuItem}>
+                                      <input
+                                      type="checkbox"
+                                      name="Appetizers"
+                                      checked={formData.selectedItems.includes(item.name)}
+                                      onChange={() => handleCheckboxChange(item.name)}
+                                      value={item.name}
+                                      />
+                                      <span>{item.name}</span>
+                              </label>
+                          ))}
+                      </div>
+                    } key={"Curries"} />
+                    <Accordion title={"Vegetarian"} content={
+                      <div className={styles.formItems}>
+                          {VegetarianItems.map(item => (
+                              <label key={item.id} className={styles.menuItem}>
+                                      <input
+                                      type="checkbox"
+                                      name="Vegetarian"
+                                      checked={formData.selectedItems.includes(item.name)}
+                                      onChange={() => handleCheckboxChange(item.name)}
+                                      value={item.name}
+                                      />
+                                      <span>{item.name}</span>
+                              </label>
+                          ))}
+                      </div>
+                    } key={"Vegetarian"} />
+                    <Accordion title={"Non-Vegetarian"} content={
+                      <div className={styles.formItems}>
+                          {NonVegetarianItems.map(item => (
+                              <label key={item.id} className={styles.menuItem}>
+                                      <input
+                                      type="checkbox"
+                                      name="Non Vegetarian"
+                                      checked={formData.selectedItems.includes(item.name)}
+                                      onChange={() => handleCheckboxChange(item.name)}
+                                      value={item.name}
+                                      />
+                                      <span>{item.name}</span>
+                              </label>
+                          ))}
+                      </div>
+                    } key={"Non-Vegetarian"} />
+                    <Accordion title={"Rice"} content={
+                      <div className={styles.formItems}>
+                          {RiceItems.map(item => (
+                              <label key={item.id} className={styles.menuItem}>
+                                      <input
+                                      type="checkbox"
+                                      name="Rice"
+                                      checked={formData.selectedItems.includes(item.name)}
+                                      onChange={() => handleCheckboxChange(item.name)}
+                                      value={item.name}
+                                      />
+                                      <span>{item.name}</span>
+                              </label>
+                          ))}
+                      </div>
+                    } key={"Rice"} />
                 </div>
               <div className={styles.formGroup}>
                 <label htmlFor="name">Full Name *</label>

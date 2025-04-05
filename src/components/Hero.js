@@ -25,7 +25,7 @@ export default function Hero() {
                     />
                     <p>39 years of serving our classics. From traditional delicacies to highest quality South Indian specials, we at Sindhu&apos;s always believed in serving quality food at affordable prices.</p>
                     <br />
-                    <Link href="https://www.google.com" className={styles.btn}>Order Now</Link>
+                    <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9" className={styles.btn}>Order Now</Link>
                     <Image src="/asset/hero/banner-1.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
                 </div>
                 <div className={styles.right}>

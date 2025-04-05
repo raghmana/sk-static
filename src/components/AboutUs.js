@@ -38,7 +38,7 @@ export default function AboutUs() {
           <div className={styles.right}>
             <h3>Welcome to Sindhu&apos;s Kitchen</h3>
             <p>At SINDHU&apos;S, we&apos;re all about bringing the rich and authentic flavors of South Indian Tamil cuisine to your table. Located at 2700 East Eldorado Parkway Suite 203, Little Elm, TX 75068, our food is made just like it is at home, with fresh and healthy ingredients. We use traditional cooking methods to keep all the natural goodness in every dish. <br />We prepare our food with the same care and attention as we would for our own family, valuing every ingredient that contributes to the excellence of our dishes.</p>
-            <Link href="https://www.google.com" className={styles.btn}>Try Our Awesome Food</Link>
+            <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9" className={styles.btn}>Try Our Awesome Food</Link>
           </div>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function AboutUs() {
           <div className={styles.card10}></div>
           <div className={styles.card11}></div>
           <div className={styles.card12}></div>
-          <div className={styles.card13}></div>
+          {/* <div className={styles.card13}></div>
           <div className={styles.card14}></div>
           <div className={styles.card15}></div>
           <div className={styles.card16}></div>
@@ -113,7 +113,7 @@ export default function AboutUs() {
           <div className={styles.card22}></div>
           <div className={styles.card23}></div>
           <div className={styles.card24}></div>
-          <div className={styles.card25}></div>
+          <div className={styles.card25}></div> */}
         </div>
       </section>
       <section className={styles.testimonials}>
