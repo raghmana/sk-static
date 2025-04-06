@@ -34,7 +34,7 @@ export default function Navbar() {
       {/* Logo or Brand Name */}
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <Image src="/asset/logo.png" alt="Sindhu's Kitchen" width={220} height={70} priority />
+          <Link href="/"><Image src="/asset/logo.png" alt="Sindhu's Kitchen" width={220} height={70} priority /></Link>
         </div>
 
         {/* Hamburger Menu Icon (for mobile) */}

@@ -245,3 +245,26 @@
     border: 1px solid rgba(#f44336, 0.3);
   }
 }
+
+//For the mobile view
+@media only screen and (max-width: 600px)  {
+  .cateringContainer {
+    padding: 1rem;
+  }
+  .cateringHeader h1 {
+    font-size: 2rem;
+  }
+  .cateringHeader p {
+    font-size: 1rem;
+  }
+  .cateringContent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .cateringInfo {
+    width: auto;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

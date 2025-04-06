@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "message": "This is sample Notification!!!",
   "backgroundColor": "#048c4f",
   "textColor": "#ffffff"
