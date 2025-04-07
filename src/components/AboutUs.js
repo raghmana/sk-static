@@ -141,7 +141,7 @@ export default function AboutUs() {
               <div className={styles.extra}>”</div>
               <Image src="/asset/icon/rajesh.webp" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
               <h4>Rajeshkanna T.</h4>
-              <p>Awesome food! The Veg Biryani we ordered was absolutely delightful! It had such an authentic taste that truly impressed us. Typically, we lean towards non-veg Biryani, but this one has definitely changed our minds—it&apos;s easily one of the best we&apos;ve ever had. We&apos;re eager to explore more of Sindhu&apos;s menu. It's quickly becoming our favorite spot.</p>
+              <p>Awesome food! The Veg Biryani we ordered was absolutely delightful! It had such an authentic taste that truly impressed us. Typically, we lean towards non-veg Biryani, but this one has definitely changed our minds—it&apos;s easily one of the best we&apos;ve ever had. We&apos;re eager to explore more of Sindhu&apos;s menu. It&apos;s quickly becoming our favorite spot.</p>
             </div>
           </div>
           <div className={styles.inner}>
