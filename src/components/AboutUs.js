@@ -141,7 +141,7 @@ export default function AboutUs() {
               <div className={styles.extra}>”</div>
               <Image src="/asset/icon/rajesh.webp" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
               <h4>Rajeshkanna T.</h4>
-              <p>Awesome food! The Veg Biryani we ordered was absolutely delightful! It had such an authentic taste that truly impressed us. Typically, we lean towards non-veg Biryani, but this one has definitely changed our minds—it's easily one of the best we've ever had. We're eager to explore more of Sindhu's menu. It's quickly becoming our favorite spot.</p>
+              <p>Awesome food! The Veg Biryani we ordered was absolutely delightful! It had such an authentic taste that truly impressed us. Typically, we lean towards non-veg Biryani, but this one has definitely changed our minds—it&apos;s easily one of the best we&apos;ve ever had. We&apos;re eager to explore more of Sindhu&apos;s menu. It's quickly becoming our favorite spot.</p>
             </div>
           </div>
           <div className={styles.inner}>
@@ -149,7 +149,7 @@ export default function AboutUs() {
             <div className={styles.extra}>”</div>
               <Image src="/asset/icon/deva.webp" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
               <h4>Deva M.</h4>
-              <p>Sindhu’s Kitchen serves tasty and fresh food every time. The flavors always hit the mark, and it really feels like homemade cooking. What I love most is that the quality and taste are always spot on, no matter when I order. The ingredients always seem fresh, and the dishes are prepared with care. Whether I eat there or get takeout, I know I can count on Sindhu’s Kitchen for a delicious and reliable meal. This place is definitely a go-to for great food.</p>
+              <p>Sindhu&apos;s Kitchen serves tasty and fresh food every time. The flavors always hit the mark, and it really feels like homemade cooking. What I love most is that the quality and taste are always spot on, no matter when I order. The ingredients always seem fresh, and the dishes are prepared with care. Whether I eat there or get takeout, I know I can count on Sindhu&apos;s Kitchen for a delicious and reliable meal. This place is definitely a go-to for great food.</p>
             </div>
           </div>
         </Marquee>
