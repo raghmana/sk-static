@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
       </div>
       <hr className={styles.seperator} />
-      <p className={styles.copy}>&copy; 2025 Sindhu’s Kitchen, LLC 2025 All Rights Reserved</p>
+      <p className={styles.copy}>&copy; 2025 SINDHU&apos;S, LLC - All Rights Reserved <br /> Made with <Link href="https://tamtreellc.com/" target="_blank">TamTree</Link></p>
     </footer>
   );
 }

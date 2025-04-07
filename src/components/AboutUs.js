@@ -36,7 +36,7 @@ export default function AboutUs() {
             <Image src="/asset/banner/about.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={300} height={150} priority />
           </div>
           <div className={styles.right}>
-            <h3>Welcome to SINDHU&apos;s</h3>
+            <h3>Welcome to SINDHU&apos;S</h3>
             <p>At SINDHU&apos;S, we&apos;re all about bringing the rich and authentic flavors of South Indian Tamil cuisine to your table. Located at 2700 East Eldorado Parkway Suite 203, Little Elm, TX 75068, our food is made just like it is at home, with fresh and healthy ingredients. We use traditional cooking methods to keep all the natural goodness in every dish. <br />We prepare our food with the same care and attention as we would for our own family, valuing every ingredient that contributes to the excellence of our dishes.</p>
             <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9" className={styles.btn}>Try Our Awesome Food</Link>
           </div>
@@ -45,7 +45,7 @@ export default function AboutUs() {
       <section className={styles.special}>
         {/* <h2>Why Sindhu&apos;s</h2> */}
         <Image src="/asset/hero/banner-1.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
-        <h3>What makes SINDHU&apos;s special</h3>
+        <h3>What makes SINDHU&apos;S special</h3>
         <div className={styles.box}>
           <div className={styles.boxList}>
             <Image src="/asset/icon/water.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
@@ -88,7 +88,7 @@ export default function AboutUs() {
         </div>
       </section>
       <section className={styles.galary}>
-        <h2>SINDHU&apos;s Gallery</h2>
+        <h2>SINDHU&apos;S Gallery</h2>
         <div className={styles.bento}>
           <div className={styles.card1}></div>
           <div className={styles.card2}></div>
