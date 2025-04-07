@@ -12,12 +12,12 @@ export default function AboutUs() {
       <section className={styles.how}>
         <h2>Sindhu&apos;s Special</h2>
         <Marquee className={styles.marquee} pauseOnHover={true} gradient={false} speed={60}>
-          <Image src="/asset/banner/1.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
-          <Image src="/asset/banner/8.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
-          <Image src="/asset/banner/3.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/13.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/14.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/10.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
           <Image src="/asset/banner/4.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
-          <Image src="/asset/banner/5.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
-          <Image src="/asset/banner/6.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/12.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
+          <Image src="/asset/banner/11.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
         </Marquee>
         <Marquee className={styles.marquee} pauseOnHover={true} gradient={false} speed={60} direction={"right"}>
           <h3>Chicken Biryani - </h3>
@@ -29,7 +29,7 @@ export default function AboutUs() {
           <h3>Kizhi Parotta - </h3>
         </Marquee>
       </section>
-      <section className={styles.about}>
+      {/* <section className={styles.about}>
         <h2>Best Indian food in Little Elm</h2>
         <div className={styles.aboutInner}>
           <div className={styles.left}>
@@ -41,11 +41,11 @@ export default function AboutUs() {
             <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9" className={styles.btn}>Try Our Awesome Food</Link>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className={styles.special}>
         {/* <h2>Why Sindhu&apos;s</h2> */}
-        <Image src="/asset/hero/banner-1.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
-        <h3>What makes SINDHU&apos;S special</h3>
+        <Image src="/asset/hero/kolam-mini.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
+        <h3>What makes Sindhu&apos;s special</h3>
         <div className={styles.box}>
           <div className={styles.boxList}>
             <Image src="/asset/icon/water.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
@@ -87,7 +87,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <section className={styles.galary}>
+      {/* <section className={styles.galary}>
         <h2>SINDHU&apos;S Gallery</h2>
         <div className={styles.bento}>
           <div className={styles.card1}></div>
@@ -102,7 +102,7 @@ export default function AboutUs() {
           <div className={styles.card10}></div>
           <div className={styles.card11}></div>
           <div className={styles.card12}></div>
-          {/* <div className={styles.card13}></div>
+          <div className={styles.card13}></div>
           <div className={styles.card14}></div>
           <div className={styles.card15}></div>
           <div className={styles.card16}></div>
@@ -114,22 +114,49 @@ export default function AboutUs() {
           <div className={styles.card22}></div>
           <div className={styles.card23}></div>
           <div className={styles.card24}></div>
-          <div className={styles.card25}></div> */}
+          <div className={styles.card25}></div>
+        </div>
+      </section> */}
+      <section className={styles.rewards}>
+        <div className={styles.inner}>
+          <h2>Sindhu&apos;s rewards</h2>
+          <p>Become a member of our exclusive rewards program and start earning points every time you shop! Redeem your points for exciting free items, enjoy special perks, and be the first to know about our latest offers, updates, and events.</p>
+          <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9/account/entry?signUpTab=true" target="_blank" className={styles.cta}>Get Your Reward Points</Link>
+          <Image src="/asset/galary/reward-min.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
         </div>
       </section>
       <section className={styles.testimonials}>
         <h2>What Our Customers Says</h2>
-        <div className={styles.inner}>
+        <Marquee className={styles.marquee} pauseOnHover={true} gradient={false} speed={60}>
+          <div className={styles.inner}>
+            <div className={styles.card}>
+              <div className={styles.extra}>”</div>
+              <Image src="/asset/icon/nikul.webp" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+              <h4>Nikul S.</h4>
+              <p>I discovered this place yesterday on DD. I ordered the Rasaam and Sambar. Incredible. First time I had either of these items where it was comparable to home cooking. Not just the taste, but the freshness and quality of the preparation. I was so impressed I decided to put in a much larger order today and will enjoy with my family tonight for dinner. Although I have not tried today&apos;s order, the quality and care of packaging was evident they take tremendous pride and care in their product. The food definitely surpasses any eye test! Will update the post after we eat tonight.</p>
+            </div>
+          </div>
+          <div className={styles.inner}>
+            <div className={styles.card}>
+              <div className={styles.extra}>”</div>
+              <Image src="/asset/icon/rajesh.webp" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+              <h4>Rajeshkanna T.</h4>
+              <p>Awesome food! The Veg Biryani we ordered was absolutely delightful! It had such an authentic taste that truly impressed us. Typically, we lean towards non-veg Biryani, but this one has definitely changed our minds—it's easily one of the best we've ever had. We're eager to explore more of Sindhu's menu. It's quickly becoming our favorite spot.</p>
+            </div>
+          </div>
+          <div className={styles.inner}>
           <div className={styles.card}>
             <div className={styles.extra}>”</div>
-            <Image src="/asset/man.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
-            <h4>Nikul S.</h4>
-            <p>I discovered this place yesterday on DD. I ordered the Rasaam and Sambar. Incredible. First time I had either of these items where it was comparable to home cooking. Not just the taste, but the freshness and quality of the preparation. I was so impressed I decided to put in a much larger order today and will enjoy with my family tonight for dinner. Although I have not tried today&apos;s order, the quality and care of packaging was evident they take tremendous pride and care in their product. The food definitely surpasses any eye test! Will update the post after we eat tonight.</p>
+              <Image src="/asset/icon/deva.webp" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+              <h4>Deva M.</h4>
+              <p>Sindhu’s Kitchen serves tasty and fresh food every time. The flavors always hit the mark, and it really feels like homemade cooking. What I love most is that the quality and taste are always spot on, no matter when I order. The ingredients always seem fresh, and the dishes are prepared with care. Whether I eat there or get takeout, I know I can count on Sindhu’s Kitchen for a delicious and reliable meal. This place is definitely a go-to for great food.</p>
+            </div>
           </div>
-        </div>
+        </Marquee>
+        
       </section>
       <section className={styles.faq}>
-      <h2>FAQ</h2>
+      <h2>Faq</h2>
       {accordionData.map(({ title, content }) => (
           <Accordion title={title} content={content} key={title} />
         ))}

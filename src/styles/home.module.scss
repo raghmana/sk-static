@@ -1,6 +1,6 @@
 @use 'variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
 
 .main {
     padding:0;
@@ -8,22 +8,27 @@
     box-sizing: border-box;
 }
 .hero {
-    
+    background-color: #F9F6EE;
+    -padding-top: 13%;
+    height: 100vh;
+    overflow: hidden;
     .heroContainer {
-        -max-width: 1200px;
+        max-width: 1200px;
         
         margin: 0 auto;
         -margin-top: 11rem;
         -padding: 1rem 2rem;
         box-sizing: border-box;
         -border-radius: 3rem;
-        display: flex;
+        -display: flex;
         -height: 100vh;
+        
         .left {
-            width: 50%;
-            padding-left: 5rem;
-            margin-top: 13%;
+            width: 100%;
+            -padding-left: 5rem;
+            -margin-top: 13%;
             box-sizing: border-box;
+            text-align: center;
             .heroTitle {
                 font-size: 4rem;
                 margin: 0;
@@ -32,10 +37,13 @@
                 line-height: 1.25;
                 letter-spacing: -0.025em;
                 color: $black-font;
+                margin-top: 13%;
             }
             p {
               font-size: 1rem;
               font-family: "Poppins", sans-serif;
+              width: 75%;
+              margin: 0 auto;
             }
             .btn {
                 background-color: $primary-color;
@@ -50,6 +58,8 @@
                 display: inline-block;
                 font-family: "Poppins", sans-serif;
                 margin-top: rem;
+                position: relative;
+                z-index:10;
                 &:hover {
                     text-decoration: none;
                     background-color: $secondary-color;
@@ -57,26 +67,48 @@
             }
             .bannerShapes1 {
                 position: absolute;
-                width: 20%;
+                width: 30%;
                 height:auto;
-                left: -4rem;
-                margin-top: 4rem;
+                left: -15%;
+                margin-top: -17%;
                 opacity: 0.5;
+                animation: round 30s linear infinite;
+            }
+            @keyframes round {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }   
             }
         }
         .right {
-            width: 50%;
+            width: 100%;
             -background-color: $secondary-color-light;
             display: flex;
             justify-content: center;
             gap: 0.8rem;
             .heroImg {
-                width: 90%;
+                width: auto;
                 height: auto;
-                border-radius: 2rem;
-                margin-top: 5.3rem;
-                -margin-left: -2.1rem;
-                transform: scale(1);
+                margin-top: -3rem;
+            }
+            .heroImg2 {
+                width: 20%;
+                height: auto;
+                position: absolute;
+                right:0;
+                bottom:0;
+                opacity: 0.5;
+            }
+            .heroImg3 {
+                width: 20%;
+                height: auto;
+                position: absolute;
+                left:0;
+                bottom:0;
+                opacity: 0.5;
             }
             .one {
                 width: 15rem;
@@ -197,6 +229,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    -height: 6rem;
     z-index: 1000;
     transition: box-shadow 0.3s ease-in-out; 
     font-family: "Poppins", sans-serif;
@@ -208,12 +241,12 @@
     }
     
     .inner {
-        -max-width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 5rem;
+        padding: 0.5rem 5rem;
     }
   
     .brand {
@@ -305,14 +338,15 @@
 .how {
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 3rem;
     h2 {
-        font-size: 1rem;
-        text-transform: uppercase;
+        font-size: 3rem;
+        -text-transform: uppercase;
         text-align: center;
-        font-family: "Poppins", sans-serif;
-        color: $sub-heading;
-        font-weight: 500;
-        margin-top: 2rem;
+        font-family: "Lavishly Yours", cursive;
+        color: $primary-color;
+        font-weight: bold;
+        margin-top: 4rem;
     }
     .marquee {
         padding: 1rem 0;
@@ -330,8 +364,8 @@
     }
     .bannerImg {
         margin: 0 0.6rem;
-        box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.3);
-        border-radius: 1.5rem;
+        -box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 0.5rem;
     }
 }
 
@@ -402,9 +436,9 @@
         position: absolute;
         width: 20%;
         height:auto;
-        left: -4rem;
+        left: -10%;
         margin-top: 4rem;
-        opacity: 0.5;
+        opacity: 0.4;
     }
     h2 {
         font-size: 1rem;
@@ -418,8 +452,9 @@
     }
     h3 {
         font-size: 3rem;
-        font-family: "Playfair", serif;
+        font-family: "Lavishly Yours", cursive;
         text-align: center;
+        color: $primary-color
     }
     .box {
         display: flex;
@@ -522,6 +557,54 @@
                 max-width: 70%;
                 margin: 0 auto;
             }
+        }
+    }
+}
+
+.rewards {
+    background-color: #F9F6EE;
+    padding: 3rem;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+    .inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        h2 {
+            font-size: 3rem;
+            font-family: "Lavishly Yours", cursive;
+            color: $primary-color;
+            margin-bottom: -0.5rem;
+            margin-top: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            font-family: "Poppins", sans-serif;
+            max-width: 70%;
+        }
+        .cta {
+            background-color: $primary-color;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+            border-radius: 1.9rem;
+            border: none;
+            outline: none;
+            transition: 0.3s;
+            display: inline-block;
+            font-family: "Poppins", sans-serif;
+            margin-top: 1.4rem;
+            &:hover {
+                text-decoration: none;
+                background-color: $secondary-color;
+            }
+        }
+        .bannerShapes1 {
+            position: absolute;
+            width: 23%;
+            height: auto;
+            right: 10%;
+            margin-top: -15%;
         }
     }
 }
@@ -677,12 +760,11 @@
     margin-bottom: 3rem;
     
     h2 {
-        font-size: 1rem;
-        text-transform: uppercase;
+        font-size: 3rem;
         text-align: center;
-        font-family: "Poppins", sans-serif;
-        color: $sub-heading;
-        font-weight: 500;
+        font-family: "Lavishly Yours", cursive;
+        color: $primary-color;
+        font-weight: bold;
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
@@ -690,24 +772,33 @@
         padding-top: 2rem;
         display: flex;
         justify-content: center;
+        padding-bottom: 1rem;
         .card {
             background-color: $sage-green;
-            width: 45rem;
+            width: 25rem;
+            height: 22rem;
             border-radius: 1rem;
             box-shadow: 0 4px 8px -2px #091e4240, 0 0 0 1px #02020214;
             padding: 1rem;
             position: relative;
+            margin-right: 2rem;
             .extra {
                 position: absolute;
-                font-size: 13rem;
+                font-size: 10rem;
                 right: 0;
-                top: -2rem;
+                top: -1rem;
             }
             h4 {
                 font-family: "Poppins", sans-serif;
+                font-size: 1rem;
             }
             p {
                 font-family: "Poppins", sans-serif;
+                font-size: 0.8rem;
+            }
+            img {
+                border-radius: 50%;
+                box-shadow: 0 4px 8px -2px #091e4240, 0 0 0 1px #02020214;
             }
         }
     }
@@ -716,13 +807,13 @@
 .faq {
     width: 900px;
     margin: 0 auto;
+    padding-bottom: 3rem;
     h2 {
-        font-size: 1rem;
-        text-transform: uppercase;
+        font-size: 3rem;
         text-align: center;
-        font-family: "Poppins", sans-serif;
-        color: $sub-heading;
-        font-weight: 500;
+        font-family: "Lavishly Yours", cursive;
+        color: $primary-color;
+        font-weight: bold;
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
