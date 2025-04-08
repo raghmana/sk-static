@@ -1,6 +1,6 @@
 @use 'variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 .main {
     padding:0;
@@ -343,7 +343,7 @@
         font-size: 3rem;
         -text-transform: uppercase;
         text-align: center;
-        font-family: "Lavishly Yours", cursive;
+        font-family: "Poiret One", sans-serif;
         color: $primary-color;
         font-weight: bold;
         margin-top: 4rem;
@@ -452,9 +452,11 @@
     }
     h3 {
         font-size: 3rem;
-        font-family: "Lavishly Yours", cursive;
+        font-family: "Poiret One", sans-serif;
         text-align: center;
-        color: $primary-color
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 4rem;
     }
     .box {
         display: flex;
@@ -571,7 +573,7 @@
         margin: 0 auto;
         h2 {
             font-size: 3rem;
-            font-family: "Lavishly Yours", cursive;
+            font-family: "Poiret One", sans-serif;
             color: $primary-color;
             margin-bottom: -0.5rem;
             margin-top: 1rem;
@@ -604,7 +606,7 @@
             width: 23%;
             height: auto;
             right: 10%;
-            margin-top: -15%;
+            margin-top: -13%;
         }
     }
 }
@@ -762,7 +764,7 @@
     h2 {
         font-size: 3rem;
         text-align: center;
-        font-family: "Lavishly Yours", cursive;
+        font-family: "Poiret One", sans-serif;
         color: $primary-color;
         font-weight: bold;
         margin-top: 2rem;
@@ -811,7 +813,7 @@
     h2 {
         font-size: 3rem;
         text-align: center;
-        font-family: "Lavishly Yours", cursive;
+        font-family: "Poiret One", sans-serif;
         color: $primary-color;
         font-weight: bold;
         margin-top: 2rem;

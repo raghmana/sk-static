@@ -10,7 +10,7 @@ export default function AboutUs() {
   return (
     <>
       <section className={styles.how}>
-        <h2>Sindhu&apos;s Special</h2>
+        <h2>SINDHU&apos;S Special</h2>
         <Marquee className={styles.marquee} pauseOnHover={true} gradient={false} speed={60}>
           <Image src="/asset/banner/13.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
           <Image src="/asset/banner/14.jpg" alt="Sindhus Kitchen" className={styles.bannerImg} width={300} height={150} priority />
@@ -45,7 +45,7 @@ export default function AboutUs() {
       <section className={styles.special}>
         {/* <h2>Why Sindhu&apos;s</h2> */}
         <Image src="/asset/hero/kolam-mini.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
-        <h3>What makes Sindhu&apos;s special</h3>
+        <h3>What makes SINDHU&apos;S special</h3>
         <div className={styles.box}>
           <div className={styles.boxList}>
             <Image src="/asset/icon/water.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
@@ -119,10 +119,10 @@ export default function AboutUs() {
       </section> */}
       <section className={styles.rewards}>
         <div className={styles.inner}>
-          <h2>Sindhu&apos;s rewards</h2>
+          <h2>SINDHU&apos;S rewards</h2>
           <p>Become a member of our exclusive rewards program and start earning points every time you shop! Redeem your points for exciting free items, enjoy special perks, and be the first to know about our latest offers, updates, and events.</p>
-          <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9/account/entry?signUpTab=true" target="_blank" className={styles.cta}>Get Your Reward Points</Link>
-          <Image src="/asset/galary/reward-min.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
+          <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9/account/entry?signUpTab=true" target="_blank" className={styles.cta}>Become a VIP Member</Link>
+          <Image src="/asset/galary/vip.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
         </div>
       </section>
       <section className={styles.testimonials}>
@@ -156,7 +156,7 @@ export default function AboutUs() {
         
       </section>
       <section className={styles.faq}>
-      <h2>Faq</h2>
+      <h2>FAQ</h2>
       {accordionData.map(({ title, content }) => (
           <Accordion title={title} content={content} key={title} />
         ))}
