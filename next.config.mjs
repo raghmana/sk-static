@@ -9,10 +9,6 @@ const nextConfig = {
         return config;
     },
     output: 'standalone',
-    images: {
-      unoptimized: true,
-    },
-    output: 'export',
 };
 
 export default nextConfig;
