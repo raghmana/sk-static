@@ -9,6 +9,19 @@ const nextConfig = {
         return config;
     },
     output: 'standalone',
+    // Add serverless function configuration
+    serverRuntimeConfig: {
+      PROJECT_ROOT: __dirname
+    },
+    // Add API specific configuration
+    async rewrites() {
+        return [
+            {
+                source: '/api/:path*',
+                destination: '/api/:path*',
+            },
+        ];
+    },
 };
 
 export default nextConfig;
