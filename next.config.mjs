@@ -8,6 +8,10 @@ const nextConfig = {
         });
         return config;
     },
+    output: 'standalone',
+    images: {
+      unoptimized: true,
+    },
 };
 
 export default nextConfig;
