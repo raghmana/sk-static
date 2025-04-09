@@ -43,7 +43,7 @@ export default function Menu() {
                         <Image src="/asset/banner/13.jpg" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
                         <h5>Mutton Biryani</h5>
                         <p className={styles.price}>$15.99</p>
-                        <p className={styles.des}>SINDHU'S Special Mutton Biryani</p>
+                        <p className={styles.des}>SINDHU&apos;S Special Mutton Biryani</p>
                         <label>&#x1F496;5</label>
                         <Link className={styles.link} href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9/ea47e53e-d092-4d3f-a3c8-c2e5aa3414a6" target="_blank">Order Now</Link>
                     </div>
