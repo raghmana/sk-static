@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  margin-top: 6rem;
+  margin-top: 7rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -17,6 +17,11 @@
     font-family: "Playfair", serif;
     color: $black-font;
     margin-bottom: 1rem;
+    background-size:  100% 15%;
+        background-repeat: repeat-x;
+        background-position: left 0% bottom 10%;
+        padding-bottom:1rem;
+        background-image: repeating-linear-gradient(135deg, hsl(46,80%,67%) 0px, hsl(46,80%,67%) 14px,hsl(91,80%,67%) 14px, hsl(91,80%,67%) 28px,hsl(136,80%,67%) 28px, hsl(136,80%,67%) 42px,hsl(181,80%,67%) 42px, hsl(181,80%,67%) 56px,hsl(226,80%,67%) 56px, hsl(226,80%,67%) 70px,hsl(271,80%,67%) 70px, hsl(271,80%,67%) 84px,hsl(316,80%,67%) 84px, hsl(316,80%,67%) 98px,hsl(1,80%,67%) 98px, hsl(1,80%,67%) 112px);
   }
 
   p {
@@ -59,7 +64,7 @@
 }
 
 .feature {
-  background-color: $sage-green;
+  background-color: #F9F6EE;
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px -2px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(9, 30, 66, 0.08);
@@ -117,7 +122,7 @@
     font-size: 0.9rem;
     font-family: "Poppins", sans-serif;
     position: relative;
-    background-color: $sage-green;
+    background-color: #e3e3e3;
     padding: 0.7rem 1rem;
     border-radius: 0.55rem;
     font-weight: 500;
@@ -250,6 +255,10 @@
 @media only screen and (max-width: 600px)  {
   .cateringContainer {
     padding: 1rem;
+    margin-top: 6rem;
+  }
+  .cateringHeader {
+    margin-bottom: 1rem;
   }
   .cateringHeader h1 {
     font-size: 2rem;

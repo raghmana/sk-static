@@ -128,7 +128,6 @@ export default function Catering() {
       <div className={styles.cateringContainer}>
         <div className={styles.cateringHeader}>
           <h1>Catering Services</h1>
-          <p>Let us make your event special with our authentic cuisine</p>
         </div>
 
         <div className={styles.cateringContent}>

@@ -11,7 +11,9 @@
     background-color: #F9F6EE;
     -padding-top: 13%;
     height: 100vh;
+    max-height: 900px;
     overflow: hidden;
+    position: relative;
     .heroContainer {
         max-width: 1200px;
         
@@ -343,8 +345,8 @@
         font-size: 3rem;
         -text-transform: uppercase;
         text-align: center;
-        font-family: "Poiret One", sans-serif;
-        color: $primary-color;
+        font-family: "Playfair", serif;
+        color: $black-font;
         font-weight: bold;
         margin-top: 4rem;
     }
@@ -431,7 +433,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    margin-top: 1rem;
+    margin-top: -3rem;
     .bannerShapes1 {
         position: absolute;
         width: 20%;
@@ -447,16 +449,16 @@
         font-family: "Poppins", sans-serif;
         color: $sub-heading;
         font-weight: 500;
-        margin-top: 2rem;
+        margin-top: 0rem;
         margin-bottom: -1rem;
     }
     h3 {
         font-size: 3rem;
-        font-family: "Poiret One", sans-serif;
+        font-family: "Playfair", serif;
+        color: $black-font;
         text-align: center;
         font-weight: bold;
-        color: $primary-color;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
     .box {
         display: flex;
@@ -548,16 +550,18 @@
     .box2 {
         .boxListTwo {
             text-align: center;
+            margin-bottom: 1.5rem;
             h4 {
                 font-size: 1.8rem;
                 font-family: "Playfair", serif;
-                margin-top: 2.5rem;
+                margin-top: 1rem;
                 margin-bottom: 1.5rem;
             }
             p {
                 font-size: 0.9rem;
                 max-width: 70%;
                 margin: 0 auto;
+                font-family: "Poppins", sans-serif;
             }
         }
     }
@@ -573,8 +577,8 @@
         margin: 0 auto;
         h2 {
             font-size: 3rem;
-            font-family: "Poiret One", sans-serif;
-            color: $primary-color;
+            font-family: "Playfair", serif;
+            color: $black-font;
             margin-bottom: -0.5rem;
             margin-top: 1rem;
         }
@@ -764,8 +768,8 @@
     h2 {
         font-size: 3rem;
         text-align: center;
-        font-family: "Poiret One", sans-serif;
-        color: $primary-color;
+        font-family: "Playfair", serif;
+        color: $black-font;
         font-weight: bold;
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -813,8 +817,8 @@
     h2 {
         font-size: 3rem;
         text-align: center;
-        font-family: "Poiret One", sans-serif;
-        color: $primary-color;
+        font-family: "Playfair", serif;
+        color: $black-font;
         font-weight: bold;
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -847,14 +851,34 @@
 }
 
 .aboutUs {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding-bottom: 4rem;
+    .bannerShapes1 {
+        position: absolute;
+        width: 20%;
+        height: auto;
+        left: -10%;
+        opacity: 0.5;
+    }
+    .bannerShapes2 {
+        position: absolute;
+        width: 20%;
+        height: auto;
+        right: 0;
+        top: 100%;
+        opacity: 0.5;
+    }
     h2 {
         margin-top: 10rem;
         font-size: 3rem;
+        padding:2rem;
         font-family: "Playfair", serif;
         text-align: center;
+        background-size:  100% 15%;
+        background-repeat: repeat-x;
+        background-position: left 0% bottom 10%;
+        background-image: repeating-linear-gradient(135deg, hsl(46,80%,67%) 0px, hsl(46,80%,67%) 14px,hsl(91,80%,67%) 14px, hsl(91,80%,67%) 28px,hsl(136,80%,67%) 28px, hsl(136,80%,67%) 42px,hsl(181,80%,67%) 42px, hsl(181,80%,67%) 56px,hsl(226,80%,67%) 56px, hsl(226,80%,67%) 70px,hsl(271,80%,67%) 70px, hsl(271,80%,67%) 84px,hsl(316,80%,67%) 84px, hsl(316,80%,67%) 98px,hsl(1,80%,67%) 98px, hsl(1,80%,67%) 112px);
     }
     p {
         font-size: 1rem;
@@ -1285,14 +1309,74 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    margin-top: 8rem;
+    margin-top: 7rem;
 
     h1 {
         text-align: center;
         margin-bottom: 2rem;
-        color: $primary-color;
+        color: $black-font;
         font-family: "Playfair", serif;
-        font-size: 2.8rem;
+        font-size: 3rem;
+        background-size:  100% 15%;
+        background-repeat: repeat-x;
+        background-position: left 0% bottom 10%;
+        padding-bottom:1rem;
+        background-image: repeating-linear-gradient(135deg, hsl(46,80%,67%) 0px, hsl(46,80%,67%) 14px,hsl(91,80%,67%) 14px, hsl(91,80%,67%) 28px,hsl(136,80%,67%) 28px, hsl(136,80%,67%) 42px,hsl(181,80%,67%) 42px, hsl(181,80%,67%) 56px,hsl(226,80%,67%) 56px, hsl(226,80%,67%) 70px,hsl(271,80%,67%) 70px, hsl(271,80%,67%) 84px,hsl(316,80%,67%) 84px, hsl(316,80%,67%) 98px,hsl(1,80%,67%) 98px, hsl(1,80%,67%) 112px);
+    }
+    .topMenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:1.5rem;
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px 4px rgba(0,0,0,0.1);
+            padding-bottom: 2rem;
+            position: relative;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px 8px 0 0;
+            }
+            h5 {
+                font-size: 0.9rem;
+                font-family: "Poppins", sans-serif;
+                padding: 0;
+                margin-top: 0.5rem;
+                margin-left: 1rem;
+                margin-bottom: 0;
+            }
+            label {
+                position: absolute;
+                right: 1rem;
+                font-size: 1rem;
+                font-family: "Poppins", sans-serif;
+                letter-spacing: 0.3rem;
+            }
+            .price {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: $primary-color;
+                margin-left: 1rem;
+                margin-top: 0.5rem;
+            }
+            .des {
+                font-size: 0.8rem;
+                font-family: "Poppins", sans-serif;
+                margin-left: 1rem;
+                margin-top: -0.5rem;
+            }
+            .link {
+                background-color: $primary-color;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                border-radius: 1rem;
+                font-size: 0.8rem;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                margin-left: 1rem;
+            }
+        }
     }
     .categorySection {
         h2 {
@@ -1360,6 +1444,9 @@
                     height: auto;
                     margin-right: 1rem;
                 }
+                label {
+                    font-family: "Poppins", sans-serif;
+                }
             }
             p {
                 font-size: 0.8rem;
@@ -1404,7 +1491,7 @@
                 font-size: 0.8rem;
                 font-family: "Poppins", sans-serif;
                 color: #fff;
-                margin-bottom: 1.2rem;
+                margin-bottom: -0.2rem;
                 label {
                     font-weight: 500;
                     margin-right: 1rem;
@@ -1427,7 +1514,7 @@
                 color: #fff;
                 font-size: 0.8rem;
                 font-family: "Poppins", sans-serif;
-                margin-bottom: 1.2rem;
+                margin-bottom: 0.5rem;
                 &:hover {
                     color: $secondary-color;
                 }
@@ -1444,7 +1531,7 @@
                 color: #fff;
                 font-size: 0.8rem;
                 font-family: "Poppins", sans-serif;
-                margin-bottom: 1.2rem;
+                margin-bottom: 0.5rem;
                 &:hover {
                     color: $secondary-color;
                 }
@@ -1482,21 +1569,44 @@
 //For Mobile
 @media only screen and (max-width: 600px)  {
     .hero {
+        max-height: 700px;
         .heroContainer {
             flex-wrap: wrap;
             .left {
                 width: 100%;
-                margin-top: 30%;
+                margin-top: 20%;
                 padding-left: unset;
                 padding: 1rem;
                 .heroTitle {
-                    font-size: 2.2rem;
+                    font-size: 2rem;
+                    text-align: left;
+                }
+                p {
+                    font-size: 0.9rem;
+                    line-height: 1.7rem;
+                    text-align: left;
+                    width: 100%;
+                }
+                .btn {
+                    display: block;
+                    padding:0.7rem 2.2rem;
+                    font-size: 1.2rem;
+                }
+                .bannerShapes1 {
+                    top: 20%;
+                    opacity: 0.3;
                 }
             }
             .right {
                 width: 100%;
-                padding: 1rem;
-                margin-top: 3rem;
+                padding: 0rem;
+                margin-top: 1rem;
+                box-sizing: border-box;
+                .heroImg {
+                    width: 50%;
+                    height: auto;
+                    margin-top: 0rem;
+                }
                 .one {
                     width: 50%;
                     height: 18rem;
@@ -1544,14 +1654,17 @@
     }
     .how {
         padding: 1rem;
-        margin-top: 4rem;
+        margin-top: 0rem;
+        h2 {
+            font-size: 2rem;;
+        }
         .marquee {
             .bannerImg {
                 width: 200px;
                 height: 100px;
             }
             h3 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -1578,7 +1691,8 @@
         padding: 1rem;
         .bannerShapes1 {
             width: 10rem;
-            left: -2rem;
+            left: -6rem;
+            opacity: 0.3;
             margin-top: 4rem;
         }
         h3 {
@@ -1684,8 +1798,29 @@
             }
         }
     }
+    .rewards {
+        padding: 1rem;
+        .inner {
+            position: relative;
+            h2 {
+                font-size: 2rem;
+            }
+            .bannerShapes1 {
+                width:25%;
+                top:40%;
+                right: 2%;
+            }
+            .cta {
+                display: block;
+            }
+        }
+        
+    }
     .testimonials {
         padding: 1rem;
+        h2 {
+            font-size: 2rem;
+        }
         .inner {
             .card {
                 p {
@@ -1699,6 +1834,9 @@
         padding: 1rem;
         box-sizing: border-box;
         padding-bottom: 3rem;
+        h2 {
+            font-size: 2rem;
+        }
     }
     .footer {
         padding: 1rem;
@@ -1759,6 +1897,10 @@
         padding: 1rem;
         h2 {
             font-size: 2rem;
+            margin-top: 6rem;
+        }
+        .bannerShapes1 {
+            top: 10%;
         }
         p {
             font-size: 0.9rem;
@@ -1766,6 +1908,33 @@
         }
         h4 {
             font-size: 1.5rem;
+        }
+    }
+    .menuContainer {
+        margin-top: 6rem;
+        padding: 1rem;
+        h1 {
+            font-size: 2rem;
+        }
+        .topMenu {
+            grid-template-columns: 1fr 1fr;
+            .card {
+                h5 {
+                    margin-left: 0.5rem;
+                }
+                .link {
+                    padding: 0.3rem 0.7rem;
+                    margin-left: 0.5rem;
+                    font-size:0.7rem;
+                }
+                .des, .price {
+                    margin-left: 0.5rem;
+                }
+                label {
+                    font-size: 0.8rem;
+                    letter-spacing: 0.1rem;
+                }
+            }
         }
     }
 }

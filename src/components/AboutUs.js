@@ -46,6 +46,12 @@ export default function AboutUs() {
         {/* <h2>Why Sindhu&apos;s</h2> */}
         <Image src="/asset/hero/kolam-mini.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
         <h3>What makes SINDHU&apos;S special</h3>
+        <div className={styles.box2}>
+          <div className={styles.boxListTwo}>
+            <h4>Fresh, Healthy, and Irresistible</h4>
+            <p>At SINDHU&apos;s, we make everything from scratch using the freshest ingredients, so you get all the natural goodness in every bite. Our menu is full of tasty and spicy snacks that you just can&apos;t resist. Whether you&apos;re craving crispy bites or savory treats, we&apos;ve got you covered. Come enjoy a taste of India and treat yourself to snacks that hit the spot!</p>
+          </div>
+        </div>
         <div className={styles.box}>
           <div className={styles.boxList}>
             <Image src="/asset/icon/water.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
@@ -78,12 +84,6 @@ export default function AboutUs() {
             <Image src="/asset/icon/tradition.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
             <h4>Honored Traditions</h4>
             <p>Our commitment to traditional cooking techniques not only preserves nutrients but also enhances flavors.</p>
-          </div>
-        </div>
-        <div className={styles.box2}>
-          <div className={styles.boxListTwo}>
-            <h4>Fresh, Healthy, and Irresistible</h4>
-            <p>At SINDHU&apos;s, we make everything from scratch using the freshest ingredients, so you get all the natural goodness in every bite. Our menu is full of tasty and spicy snacks that you just can&apos;t resist. Whether you&apos;re craving crispy bites or savory treats, we&apos;ve got you covered. Come enjoy a taste of India and treat yourself to snacks that hit the spot!</p>
           </div>
         </div>
       </section>

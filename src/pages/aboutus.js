@@ -1,6 +1,7 @@
 import styles from '../styles/home.module.scss';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function aboutUs() {
     return(
@@ -10,6 +11,7 @@ export default function aboutUs() {
             </Head>
             <div className={styles.aboutUs}>
                 <h2>About SINDHU&apos;S</h2>
+                <Image src="/asset/hero/kolam-mini.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
                 <p>At SINDHU&apos;S, we are more than just a restaurant—we are a legacy of authentic South Indian flavors passed down through three generations. Our journey began in 2001, but our culinary story dates back 39 years, rooted in the love and passion for traditional South Indian food and sweets. What started as a humble home kitchen has grown into a trusted destination where food lovers can experience the richness of authentic South Indian cuisine.</p>
                 <p>Our recipes are inspired by the heart of South India, carefully crafted to preserve the authenticity and time-honored traditions of our ancestors. We take pride in using the finest and freshest ingredients, ensuring every dish is healthy, flavorful, and true to its origins. From the crispy, golden dosas and soft, fluffy idlis to the aromatic biryanis and indulgent sweets, every bite at SINDHU&apos;s Kitchen is a celebration of heritage and taste.</p>
                 <p>At SINDHU&apos;S, we believe that food is not just about taste—it&apos;s about memories, culture, and togetherness. That&apos;s why we strive to create an experience that brings warmth and nostalgia with every meal. Whether you&apos;re enjoying a quick bite, a family feast, or a festive treat, our doors are always open to serve you with love and tradition.</p>
