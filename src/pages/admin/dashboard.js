@@ -263,7 +263,7 @@ export default function AdminDashboard() {
   return (
     <div className={styles.adminDashboard}>
       <Head>
-        <title>Admin Dashboard - Sindhu's Kitchen</title>
+        <title>Admin Dashboard - Sindhu&apos;s Kitchen</title>
       </Head>
       <header>
         <h1>Admin Settings</h1>
