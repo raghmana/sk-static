@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Menu() {
+export default function MenuPage() {
     const [menuItems, setMenuItems] = useState([]);
 
     useEffect(() => {
