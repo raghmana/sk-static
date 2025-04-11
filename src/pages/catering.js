@@ -202,7 +202,7 @@ export default function Catering() {
                                   value={item.name}
                                 />
                                 <span>{item.name}</span>
-                                <span className={styles.price}>${item.price}</span>
+                                {/* <span className={styles.price}>${item.price}</span> */}
                               </label>
                             ))}
                           </div>
