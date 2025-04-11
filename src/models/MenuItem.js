@@ -3,7 +3,8 @@ import mongoose from 'mongoose';
 const MenuItemSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    required: [true, 'Name is required'],
+    trim: true
   },
   description: {
     type: String,
@@ -11,12 +12,13 @@ const MenuItemSchema = new mongoose.Schema({
   },
   price: {
     type: Number,
-    required: true
+    required: [true, 'Price is required'],
+    min: [0, 'Price cannot be negative']
   },
   category: {
     type: String,
-    required: true,
-    enum: ['Breakfast', 'Appetizers', 'Curries', 'Vegetarian', 'Non-Vegetarian', 'Rice']
+    required: [true, 'Category is required'],
+    ref: 'Category'
   },
   isAvailable: {
     type: Boolean,

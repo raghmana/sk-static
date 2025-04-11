@@ -177,15 +177,29 @@ export default function AdminDashboard() {
 
   const handleAddItem = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setError(null);
+
+    if (!newItem.name || !newItem.price || !newItem.category) {
+      setError('Please fill in all required fields');
+      setLoading(false);
+      return;
+    }
+
     try {
       const response = await fetch('/api/menu', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(newItem),
+        body: JSON.stringify({
+          ...newItem,
+          price: parseFloat(newItem.price)
+        }),
       });
-
+  
+      const data = await response.json();
+  
       if (response.ok) {
         setNewItem({
           name: '',
@@ -195,9 +209,14 @@ export default function AdminDashboard() {
           isAvailable: true
         });
         fetchMenuItems();
+      } else {
+        setError(data.error || 'Failed to add menu item');
       }
     } catch (error) {
       console.error('Failed to add menu item:', error);
+      setError('Failed to add menu item');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -279,6 +298,11 @@ export default function AdminDashboard() {
 
         <TabPanel>
           <div className={styles.menuManagement}>
+          {error && (
+            <div className={styles.error}>
+              {error}
+            </div>
+          )}
             <form onSubmit={editingId ? handleUpdateItem : handleAddItem}>
               <div className={styles.formGroup}>
                 <label htmlFor="name">Name</label>
@@ -320,12 +344,24 @@ export default function AdminDashboard() {
                   onChange={(e) => setNewItem({...newItem, category: e.target.value})}
                   required
                 >
-                    {categories.map((category) => (
-                        <option value={category.name} key={category._id}>
-                            {category.name}
-                        </option>
-                    ))}
+                  <option value="">Select a category</option>
+                  {categories && categories.map((category) => (
+                    <option value={category.name} key={category._id}>
+                      {category.name}
+                    </option>
+                  ))}
                 </select>
+              </div>
+              <div className={styles.formGroup}>
+                <label>
+                  <input
+                    type="checkbox"
+                    id="isAvailable"
+                    checked={newItem.isAvailable}
+                    onChange={(e) => setNewItem({...newItem, isAvailable: e.target.checked})}
+                  />
+                  {' '}Item Available
+                </label>
               </div>
 
               <button className={styles.submitButton} type="submit">
@@ -465,7 +501,7 @@ export default function AdminDashboard() {
                 </label>
               </div>
 
-              <button type="submit" disabled={loading}>
+              <button className={styles.submitButton} type="submit" disabled={loading}>
                     {editingCategoryId ? 'Update Category' : 'Add Category'}
                 </button>
                 {editingCategoryId && (
