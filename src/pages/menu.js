@@ -6,9 +6,11 @@ import Image from 'next/image';
 
 export default function MenuPage() {
     const [menuItems, setMenuItems] = useState([]);
+    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
         fetchMenuItems();
+        fetchCategories();
     }, []);
 
     const fetchMenuItems = async () => {
@@ -21,14 +23,28 @@ export default function MenuPage() {
         }
     };
 
-    const categories = [
-        'Breakfast',
-        'Appetizers',
-        'Curries',
-        'Vegetarian',
-        'Non-Vegetarian',
-        'Rice'
-    ];
+    const fetchCategories = async () => {
+        try {
+          const response = await fetch('/api/categories');
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.json();
+          setCategories(data || []);
+        } catch (error) {
+          console.error('Failed to fetch categories:', error);
+          setCategories([]);
+        }
+    };
+
+    // const categories = [
+    //     'Breakfast',
+    //     'Appetizers',
+    //     'Curries',
+    //     'Vegetarian',
+    //     'Non-Vegetarian',
+    //     'Rice'
+    // ];
 
     return (
         <>
@@ -38,6 +54,7 @@ export default function MenuPage() {
             </Head>
             <div className={styles.menuContainer}>
                 <h1>Our Menu</h1>
+                <h2>Popular Dishes</h2>
                 <div className={styles.topMenu}>
                     <div className={styles.card}>
                         <Image src="/asset/banner/13.jpg" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
@@ -76,15 +93,15 @@ export default function MenuPage() {
                 <br />
                 {categories.map(category => (
                     <div key={category} className={styles.categorySection}>
-                        <h2>{category}</h2>
+                        <h2>{category.name}</h2>
                         <div className={styles.menuGrid}>
                             {menuItems
-                                .filter(item => item.category === category)
+                                .filter(item => item.category === category.name)
                                 .map(item => (
                                     <div key={item._id} className={styles.menuItem}>
                                         <h3>{item.name}</h3>
-                                        {/* <p>{item.description}</p>
-                                        <span className={styles.price}>${item.price}</span> */}
+                                        <p>{item.description}</p>
+                                        {/* <span className={styles.price}>${item.price}</span> */}
                                     </div>
                                 ))
                             }

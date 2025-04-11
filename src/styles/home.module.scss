@@ -1351,6 +1351,11 @@
         padding-bottom:1rem;
         background-image: repeating-linear-gradient(135deg, hsl(46,80%,67%) 0px, hsl(46,80%,67%) 14px,hsl(91,80%,67%) 14px, hsl(91,80%,67%) 28px,hsl(136,80%,67%) 28px, hsl(136,80%,67%) 42px,hsl(181,80%,67%) 42px, hsl(181,80%,67%) 56px,hsl(226,80%,67%) 56px, hsl(226,80%,67%) 70px,hsl(271,80%,67%) 70px, hsl(271,80%,67%) 84px,hsl(316,80%,67%) 84px, hsl(316,80%,67%) 98px,hsl(1,80%,67%) 98px, hsl(1,80%,67%) 112px);
     }
+    h2 {
+        font-size: 1.5rem;
+        color: $black-font;
+        font-family: "Poppins", sans-serif;
+    }
     .topMenu {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1409,7 +1414,7 @@
     .categorySection {
         h2 {
             color: $black-font;
-            border-bottom: 0.05rem solid $black-font;
+            border-bottom: 0.03rem solid $black-font;
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
             font-family: "Poppins", sans-serif;
