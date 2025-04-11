@@ -21,7 +21,28 @@ export default function Catering() {
   });
   useEffect(() => {
     loadData();
+    fetchMenuItems();
   }, []);
+
+  const fetchMenuItems = async () => {
+    try {
+      const response = await fetch('/api/menu');
+      const data = await response.json();
+      setMenuItems(data);
+    } catch (error) {
+      console.error('Failed to fetch menu items:', error);
+    }
+  };
+
+  const menuByCategory = menuItems.reduce((acc, item) => {
+    if (!acc[item.category]) {
+      acc[item.category] = [];
+    }
+    if (item.isAvailable) {
+      acc[item.category].push(item);
+    }
+    return acc;
+  }, {});
 
 //   const [selectedItems, setSelectedItems] = useState([]);
 
@@ -165,7 +186,30 @@ export default function Catering() {
                 <div className={styles.formGroup}>
                     <h5>Select Items You&apos;re Interested In</h5>
                     {/* <p>Breakfast</p> */}
-                    <Accordion title={"Breakfast"} content={
+                    {Object.entries(menuByCategory).map(([category, items]) => (
+                      <Accordion 
+                        key={category}
+                        title={category} 
+                        content={
+                          <div className={styles.formItems}>
+                            {items.map(item => (
+                              <label key={item._id} className={styles.menuItem}>
+                                <input
+                                  type="checkbox"
+                                  name={category.toLowerCase()}
+                                  checked={formData.selectedItems.includes(item.name)}
+                                  onChange={() => handleCheckboxChange(item.name)}
+                                  value={item.name}
+                                />
+                                <span>{item.name}</span>
+                                <span className={styles.price}>${item.price}</span>
+                              </label>
+                            ))}
+                          </div>
+                        }
+                      />
+                    ))}
+                    {/* <Accordion title={"Breakfast"} content={
                       <div className={styles.formItems}>
                         {breakfastItems.map(item => (
                             <label key={item.id} className={styles.menuItem}>
@@ -261,7 +305,7 @@ export default function Catering() {
                               </label>
                           ))}
                       </div>
-                    } key={"Rice"} />
+                    } key={"Rice"} /> */}
                 </div>
               <div className={styles.formGroup}>
                 <label htmlFor="name">Full Name *</label>
