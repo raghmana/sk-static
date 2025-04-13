@@ -51,6 +51,7 @@ export default function Navbar() {
           <Link href="/menu" onClick={() => setIsMenuOpen(false)}>Menu</Link>
           <Link href="/catering" onClick={() => setIsMenuOpen(false)}>Catering</Link>
           <Link href="https://snacks.sindhuskitchen.com/" target="_blank" onClick={() => setIsMenuOpen(false)}>Snacks</Link>
+          <Link href="/loyalty" onClick={() => setIsMenuOpen(false)}>Loyalty</Link>
           <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9" target="_blank" rel="nofollow" className={styles.btn}>Order Now</Link>
         </div>
       </div>

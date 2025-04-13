@@ -29,6 +29,7 @@ export default function Footer() {
           <Link href="/menu" onClick={() => setIsMenuOpen(false)}>Menu</Link>
           <Link href="/catering" onClick={() => setIsMenuOpen(false)}>Catering</Link>
           <Link href="/snacks" onClick={() => setIsMenuOpen(false)}>Snacks</Link>
+          <Link href="/loyalty" onClick={() => setIsMenuOpen(false)}>Loyalty</Link>
         </div>
        
         <div className={styles.contact}>

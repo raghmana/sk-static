@@ -279,7 +279,7 @@
         justify-content: space-between;
         align-items: center;
         transition: all 0.3s ease-in-out;
-        width: 45%;
+        width: 50%;
         padding-right: 2rem;
 
         &.open {
@@ -890,6 +890,88 @@
     h4 {
         font-size: 1.8rem;
         font-weight: 500;
+        color: $black-font;
+        font-family: "Playfair", serif;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .btn {
+        background-color: $primary-color;
+        color: #fff;
+        padding: 0.5rem 1.9rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        border-radius: 1.9rem;
+        border: none;
+        outline: none;
+        transition: 0.3s;
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        margin-top: 1.4rem;
+        &:hover {
+            text-decoration: none;
+            background-color: $secondary-color;
+        }
+    }
+}
+
+.loyalty {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    .bannerShapes1 {
+        position: absolute;
+        width: 20%;
+        height: auto;
+        left: -10%;
+        opacity: 0.5;
+    }
+    .bannerShapes2 {
+        position: absolute;
+        width: 20%;
+        height: auto;
+        right: 0;
+        top: 100%;
+        opacity: 0.5;
+    }
+    h2 {
+        margin-top: 10rem;
+        font-size: 3rem;
+        padding:2rem;
+        font-family: "Playfair", serif;
+        text-align: center;
+        background-size:  100% 15%;
+        background-repeat: repeat-x;
+        background-position: left 0% bottom 10%;
+        background-image: repeating-linear-gradient(135deg, hsl(46,80%,67%) 0px, hsl(46,80%,67%) 14px,hsl(91,80%,67%) 14px, hsl(91,80%,67%) 28px,hsl(136,80%,67%) 28px, hsl(136,80%,67%) 42px,hsl(181,80%,67%) 42px, hsl(181,80%,67%) 56px,hsl(226,80%,67%) 56px, hsl(226,80%,67%) 70px,hsl(271,80%,67%) 70px, hsl(271,80%,67%) 84px,hsl(316,80%,67%) 84px, hsl(316,80%,67%) 98px,hsl(1,80%,67%) 98px, hsl(1,80%,67%) 112px);
+    }
+    p {
+        font-size: 1.2rem;
+        color: $black-font;
+        font-family: "Poppins", sans-serif;
+        line-height: 2rem;
+        margin-bottom: 1.8rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $black-font;
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+        margin-top: 2rem;
+    }
+    ul {
+        li {
+            font-size: 1.2rem;
+            color: $black-font;
+            font-family: "Poppins", sans-serif;
+            line-height: 2rem;
+            margin-bottom: 0.8rem;
+        }
+    }
+    h4 {
+        font-size: 1.8rem;
+        font-weight: 800;
         color: $black-font;
         font-family: "Playfair", serif;
         text-align: center;
@@ -1940,6 +2022,23 @@
             line-height: 1.5rem;
         }
         h4 {
+            font-size: 1.5rem;
+        }
+    }
+    .loyalty {
+        padding: 1rem;
+        h2 {
+            font-size: 2rem;
+            margin-top: 6rem;
+        }
+        .bannerShapes1 {
+            top: 10%;
+        }
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+        }
+        h5 {
             font-size: 1.5rem;
         }
     }
