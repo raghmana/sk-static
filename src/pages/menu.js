@@ -49,8 +49,9 @@ export default function MenuPage() {
     return (
         <>
             <Head>
-                <title>Our Menu - Sindhu&apos;s Kitchen</title>
-                <meta name="description" content="Explore our delicious South Indian menu" />
+                <title>Menu - Sindhu&apos;s Kitchen</title>
+                <meta name="description" content="Request catering services from Sindhu&apos;s Kitchen for your special events." />
+                <link rel="icon" type="image/x-icon" href="/asset/logo-round.png"></link>
             </Head>
             <div className={styles.menuContainer}>
                 <h1>Our Menu</h1>

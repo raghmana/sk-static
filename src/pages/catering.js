@@ -144,6 +144,7 @@ export default function Catering() {
       <Head>
         <title>Catering Services - Sindhu&apos;s Kitchen</title>
         <meta name="description" content="Request catering services from Sindhu&apos;s Kitchen for your special events." />
+        <link rel="icon" type="image/x-icon" href="/asset/logo-round.png"></link>
       </Head>
       
       <div className={styles.cateringContainer}>
