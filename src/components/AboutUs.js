@@ -42,8 +42,50 @@ export default function AboutUs() {
           </div>
         </div>
       </section> */}
-      <section className={styles.special}>
-        {/* <h2>Why Sindhu&apos;s</h2> */}
+      <section className={styles.specials}>
+        <Image src="/asset/hero/kolam-mini.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
+        <h3>What makes SINDHU&apos;S special</h3>
+        <div className={styles.box2}>
+          <div className={styles.boxListTwo}>
+            <h4>Fresh, Healthy, and Irresistible</h4>
+            <p>At SINDHU&apos;s, we make everything from scratch using the freshest ingredients, so you get all the natural goodness in every bite. Our menu is full of tasty and spicy snacks that you just can&apos;t resist. Whether you&apos;re craving crispy bites or savory treats, we&apos;ve got you covered. Come enjoy a taste of India and treat yourself to snacks that hit the spot!</p>
+          </div>
+        </div>
+        <div className={styles.inner}>
+          <Image src="/asset/logo-round.png" alt="Sindhu's Kitchen" className={styles.centerLogo} width={200} height={200} priority />
+          <div className={`${styles.boxList} ${styles.left}`}>
+            <Image src="/asset/icon/water.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+            <h4>Pure Beginnings</h4>
+            <p>Our culinary creations start with the purest water in all our food and snack preparation.</p>
+          </div>
+          <div className={`${styles.boxList} ${styles.left}`}>
+            <Image src="/asset/icon/oil.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+            <h4>Premium Oils</h4>
+            <p>Exclusively cold-pressed Sesame and Peanut oils enhance our dishes.</p>
+          </div>
+          <div className={`${styles.boxList} ${styles.left}`}>
+            <Image src="/asset/icon/care.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+            <h4>Sourced with Care</h4>
+            <p>We curate our dishes with premium ingredients, some specially sourced from the heart of Tamil Nadu, India.</p>
+          </div>
+          <div className={styles.boxList}>
+            <Image src="/asset/icon/fresh.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+            <h4>Unmatched Freshness</h4>
+            <p>Enjoy meals prepared on the very same day, using our own freshly made masalas and freshly cut vegetables.</p>
+          </div>
+          <div className={styles.boxList}>
+            <Image src="/asset/icon/quality.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+            <h4>Quality Assurance</h4>
+            <p>Rest assured, we never recycle our cooking oil, maintaining the highest quality standards.</p>
+          </div>
+          <div className={styles.boxList}>
+            <Image src="/asset/icon/tradition.png" alt="Sindhus Kitchen" className={styles.aboutImg} width={60} height={60} priority />
+            <h4>Honored Traditions</h4>
+            <p>Our commitment to traditional cooking techniques not only preserves nutrients but also enhances flavors.</p>
+          </div>
+        </div>
+      </section>
+      {/* <section className={styles.special}>
         <Image src="/asset/hero/kolam-mini.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
         <h3>What makes SINDHU&apos;S special</h3>
         <div className={styles.box2}>
@@ -86,7 +128,7 @@ export default function AboutUs() {
             <p>Our commitment to traditional cooking techniques not only preserves nutrients but also enhances flavors.</p>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <section className={styles.galary}>
         <h2>SINDHU&apos;S Gallery</h2>
         <div className={styles.bento}>

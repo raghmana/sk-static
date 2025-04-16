@@ -23,8 +23,9 @@ export default function Hero() {
                         rootMargin="-50px"
                         onLetterAnimationComplete={handleAnimationComplete}
                     /> */}
-                    <h1 className={styles.heroTitle}>Welcome to SINDHU&apos;S<br /> Authentic South Indian Taste, Crafted with Premium Spices & Ingredients</h1>
-                    <p>39 years of serving our classics. From traditional delicacies to highest quality South Indian specials, we at SINDHU&apos;S always believed in serving quality food at affordable prices.</p>
+                    <h1 className={styles.heroTitle}>Welcome to SINDHU&apos;S</h1>
+                    <h2> Authentic South Indian Food, Prepared with Premium Spices & Ingredients</h2>
+                    <p>Over 4 decades of serving culinary staples from traditional desert delicacies to core South Indian specials. We, at SINDHU&apos;S always strive to serve quality food at affordable prices.</p>
                     <br />
                     <Link href="https://online.skytab.com/0ce7fe6085d57f82615bd607fa5349a9" className={styles.btn}>Order Now</Link>
                     <Image src="/asset/hero/kolam-mini.png" alt="Sindhu's Kitchen" className={styles.bannerShapes1} width={400} height={170} priority />
