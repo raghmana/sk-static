@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { login } from '../../lib/auth';
+import { login, isAuthenticated } from '../../lib/auth';
 import Head from 'next/head';
 import styles from '../../styles/home.module.scss';
 
@@ -9,7 +9,19 @@ export default function AdminLogin() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isLoggingIn, setIsLoggingIn] = useState(false); // Added this line
+  const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      const authed = await isAuthenticated();
+      if (authed) {
+        router.replace('/admin/dashboard');
+      }
+      setIsLoading(false);
+    };
+    checkAuth();
+  }, [router]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -45,6 +45,29 @@ export default function AdminDashboard() {
     loadNotification();
   }, []);
 
+  useEffect(() => {
+    const checkAuth = async () => {
+      const authed = await isAuthenticated();
+      if (!authed) {
+        router.replace('/admin');
+      } else {
+        setLoading(false);
+        // Fetch data only if authenticated
+        fetchMenuItems();
+        fetchCategories();
+        const loadNotification = async () => {
+          const settings = await getNotificationSettings();
+          if (settings) {
+            setNotification(settings);
+          }
+        };
+        loadNotification();
+      }
+    };
+    
+    checkAuth();
+  }, [router]);
+
 
   const handleNotificationChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -278,6 +301,17 @@ export default function AdminDashboard() {
     logout();
     router.push('/admin');
   };
+
+  if (loading) {
+    return (
+      <div className={styles.loading}>
+        <Head>
+          <title>Loading... - Admin Dashboard</title>
+        </Head>
+        Loading...
+      </div>
+    );
+  }
 
   return (
     <div className={styles.adminDashboard}>

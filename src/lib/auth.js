@@ -36,13 +36,23 @@ export const login = async (username, password) => {
   }
 };
 
-export const logout = () => {
+export const logout = async () => {
   try {
+    // Remove client-side cookie
     Cookies.remove('admin-authenticated', {
       path: '/',
       sameSite: 'strict',
       secure: true
     });
+
+    // Call logout API to remove HTTP-only cookie
+    await fetch('/api/auth/logout', {
+      method: 'POST',
+      credentials: 'include'
+    });
+
+    console.log('Logged out successfully');
+    window.location.href = '/admin';
   } catch (error) {
     console.error('Logout error:', error);
   }
