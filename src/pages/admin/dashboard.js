@@ -10,12 +10,15 @@ export default function AdminDashboard() {
   const router = useRouter();
   const [menuItems, setMenuItems] = useState([]);
   const [editingId, setEditingId] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
   const [newItem, setNewItem] = useState({
     name: '',
     description: '',
     price: '',
     category: '',
-    isAvailable: true
+    isAvailable: true,
+    forMenu: true,
+    forCatering: false
   });
   const [categories, setCategories] = useState([]);
   const [editingCategoryId, setEditingCategoryId] = useState(null);
@@ -235,6 +238,7 @@ export default function AdminDashboard() {
       } else {
         setError(data.error || 'Failed to add menu item');
       }
+      resetForm();
     } catch (error) {
       console.error('Failed to add menu item:', error);
       setError('Failed to add menu item');
@@ -265,6 +269,7 @@ export default function AdminDashboard() {
         });
         fetchMenuItems();
       }
+      resetForm();
     } catch (error) {
       console.error('Failed to update menu item:', error);
     }
@@ -286,20 +291,56 @@ export default function AdminDashboard() {
     }
   };
 
+  const resetForm = () => {
+    setNewItem({
+      name: '',
+      description: '',
+      price: '',
+      category: '',
+      isAvailable: true,
+      forMenu: true,
+      forCatering: false
+    });
+    setEditingId(null);
+  };
+
   const handleEditItem = (item) => {
     setEditingId(item._id);
     setNewItem({
-      name: item.name,
-      description: item.description,
-      price: item.price,
-      category: item.category,
-      isAvailable: item.isAvailable
+      name: item.name || '',
+      description: item.description || '',
+      price: item.price || '',
+      category: item.category || '',
+      isAvailable: item.isAvailable ?? true,
+      forMenu: item.forMenu ?? true,
+      forCatering: item.forCatering ?? false
     });
   };
 
   const handleLogout = () => {
     logout();
     router.push('/admin');
+  };
+
+  const filterMenuItems = (items) => {
+    if (!searchTerm) return items;
+    
+    return items.filter(item => 
+      item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.description?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.category.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  };
+
+  const groupByCategory = (items) => {
+    return items.reduce((acc, item) => {
+      const category = item.category || 'Uncategorized';
+      if (!acc[category]) {
+        acc[category] = [];
+      }
+      acc[category].push(item);
+      return acc;
+    }, {});
   };
 
   if (loading) {
@@ -354,6 +395,7 @@ export default function AdminDashboard() {
                 <textarea
                   id="description"
                   value={newItem.description}
+                  rows="2"
                   onChange={(e) => setNewItem({...newItem, description: e.target.value})}
                 />
               </div>
@@ -387,31 +429,52 @@ export default function AdminDashboard() {
                 </select>
               </div>
               <div className={styles.formGroup}>
-                <label>
-                  <input
-                    type="checkbox"
-                    id="isAvailable"
-                    checked={newItem.isAvailable}
-                    onChange={(e) => setNewItem({...newItem, isAvailable: e.target.checked})}
-                  />
-                  {' '}Item Available
-                </label>
+                <label>Show Item In:</label>
+                <div className={styles.checkboxGroup}>
+                  <label>
+                    <input
+                      type="checkbox"
+                      id="forMenu"
+                      checked={newItem.forMenu}
+                      onChange={(e) => setNewItem({...newItem, forMenu: e.target.checked})}
+                    />
+                    Menu
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      id="forCatering"
+                      checked={newItem.forCatering}
+                      onChange={(e) => setNewItem({...newItem, forCatering: e.target.checked})}
+                    />
+                    Catering
+                  </label>
+                </div>
+              </div>
+              <div className={styles.formGroup}>
+                <div className={styles.checkboxGroup2}>
+                  <label>
+                    <input
+                      type="checkbox"
+                      id="isAvailable"
+                      checked={newItem.isAvailable}
+                      onChange={(e) => setNewItem({...newItem, isAvailable: e.target.checked})}
+                    />
+                    Available
+                  </label>
+                </div>
               </div>
 
               <button className={styles.submitButton} type="submit">
                 {editingId ? 'Update Item' : 'Add Item'}
               </button>
               {editingId && (
-                <button type="button" onClick={() => {
-                  setEditingId(null);
-                  setNewItem({
-                    name: '',
-                    description: '',
-                    price: '',
-                    category: '',
-                    isAvailable: true
-                  });
-                }}>
+                <button 
+                  type="button" 
+                  onClick={resetForm}
+                  disabled={loading}
+                  className={styles.cancelButton}
+                >
                   Cancel
                 </button>
               )}
@@ -419,31 +482,44 @@ export default function AdminDashboard() {
 
             <div className={styles.menuList}>
               <h2>Menu Items</h2>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>Category</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {menuItems.map((item) => (
-                    <tr key={item._id}>
-                      <td>{item.name}</td>
-                      <td>{item.description}</td>
-                      <td>${item.price}</td>
-                      <td>{item.category}</td>
-                      <td>
-                        <button className={styles.editButton} onClick={() => handleEditItem(item)}>Edit</button>
-                        <button className={styles.deleteButton} onClick={() => handleDeleteItem(item._id)}>Delete</button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              {Object.entries(groupByCategory(menuItems)).map(([category, items]) => (
+                <div key={category} className={styles.categoryGroup}>
+                  <h3 className={styles.categoryTitle}>{category}</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Menu</th>
+                        <th>Catering</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {items.map((item) => (
+                        <tr key={item._id}>
+                          <td>{item.name}</td>
+                          <td>{item.description}</td>
+                          <td>${item.price}</td>
+                          <td>{item.category}</td>
+                          <td className={item.forMenu ? styles.successMark : styles.failureMark}>
+                            {item.forMenu ? '✓' : '✗'}
+                          </td>
+                          <td className={item.forCatering ? styles.successMark : styles.failureMark}>
+                            {item.forCatering ? '✓' : '✗'}
+                          </td>
+                          <td>
+                            <button className={styles.editButton} onClick={() => handleEditItem(item)}>Edit</button>
+                            <button className={styles.deleteButton} onClick={() => handleDeleteItem(item._id)}>Delete</button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ))}
             </div>
           </div>
         </TabPanel>

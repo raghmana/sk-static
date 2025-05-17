@@ -7,7 +7,12 @@ export default async function handler(req, res) {
   switch (req.method) {
     case 'GET':
       try {
-        const menuItems = await MenuItem.find({}).sort({ category: 1 });
+        // const menuItems = await MenuItem.find({})
+        // .sort({ category: 1 })
+        // .select('name description price category isAvailable forMenu forCatering');
+        // res.status(200).json(menuItems);
+        const menuItems = await MenuItem.find({}).lean();
+        console.log('Fetched menu items:', menuItems); // Debug log
         res.status(200).json(menuItems);
       } catch (error) {
         res.status(500).json({ error: 'Failed to fetch menu items' });
@@ -17,7 +22,8 @@ export default async function handler(req, res) {
     case 'POST':
       try {
         // Validate required fields
-        const { name, price, category } = req.body;
+        const { name, price, category, forMenu, forCatering } = req.body;
+        console.log('Creating menu item:', req.body); // Debug log
         if (!name || !price || !category) {
           return res.status(400).json({ 
             error: 'Missing required fields',
@@ -35,9 +41,12 @@ export default async function handler(req, res) {
           description: req.body.description || '',
           price: parseFloat(price),
           category,
-          isAvailable: req.body.isAvailable ?? true
+          isAvailable: req.body.isAvailable ?? true,
+          forMenu: forMenu ?? true,
+          forCatering: forCatering ?? false
         });
 
+        console.log('Created menu item:', menuItem); // Debug log
         res.status(201).json(menuItem);
       } catch (error) {
         console.error('Menu item creation error:', error);

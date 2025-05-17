@@ -23,6 +23,14 @@ const MenuItemSchema = new mongoose.Schema({
   isAvailable: {
     type: Boolean,
     default: true
+  },
+  forMenu: { 
+    type: Boolean, 
+    default: true 
+  },
+  forCatering: { 
+    type: Boolean, 
+    default: false 
   }
 }, {
   timestamps: true

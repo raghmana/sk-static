@@ -17,7 +17,9 @@ export default function MenuPage() {
         try {
             const response = await fetch('/api/menu');
             const data = await response.json();
-            setMenuItems(data);
+            // Filter items where forMenu is true
+            const menuOnlyItems = data.filter(item => item.forMenu && item.isAvailable);
+            setMenuItems(menuOnlyItems);
         } catch (error) {
             console.error('Failed to fetch menu items:', error);
         }
