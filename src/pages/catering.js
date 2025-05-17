@@ -28,7 +28,9 @@ export default function Catering() {
     try {
       const response = await fetch('/api/menu');
       const data = await response.json();
-      setMenuItems(data);
+      // Filter items where forCatering is true and item is available
+      const cateringItems = data.filter(item => item.forCatering && item.isAvailable);
+      setMenuItems(cateringItems);
     } catch (error) {
       console.error('Failed to fetch menu items:', error);
     }
